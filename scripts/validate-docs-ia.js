@@ -284,8 +284,7 @@ redirects.forEach((redirect) => {
   assert(!redirectMap.has(redirect.target), `Redirect chain detected at target: ${redirect.target}`)
 })
 
-const routedPageFiles = [
-  ...listFiles('src/docs/content/get-started', '.hbs'),
+const routedProductionFiles = [
   ...listFiles('src/docs/content/utilities', '.hbs'),
   ...listFiles('src/docs/content/methods', '.hbs'),
   ...listFiles('src/docs/content/contribute', '.hbs'),
@@ -293,7 +292,7 @@ const routedPageFiles = [
   'src/docs/content/design/guides.hbs',
 ].filter((filePath) => !path.basename(filePath).startsWith('_'))
 
-const requiredRedirects = new Map(routedPageFiles.map((filePath) => {
+const expectedRedirects = new Map(routedProductionFiles.map((filePath) => {
   const sourcePath = filePath.replace(/^src\//, '')
   const outputPath = documentationOutputPath(sourcePath)
   const sourceUrl = `${productionUrl}/${sourcePath.replace(/\.hbs$/, '.html')}`
@@ -302,92 +301,35 @@ const requiredRedirects = new Map(routedPageFiles.map((filePath) => {
   return [sourceUrl, targetUrl]
 }))
 
-const legacyRedirects = [
+const changedProductionRoutes = [
   ['/docs/content/about/what-is-design-system.html', '/get-started/about-the-nsw-design-system.html'],
-  ['/docs/content/about/about-the-nsw-design-system.html', '/get-started/about-the-nsw-design-system.html'],
   ['/docs/content/about/supporting-different-roles.html', '/get-started/supporting-different-roles.html'],
   ['/docs/content/about/our-ecosystem.html', '/get-started/our-ecosystem.html'],
-  ['/docs/content/setup/index.html', '/index.html#get-started'],
-  ['/get-started/set-up/index.html', '/index.html#get-started'],
-  ['/docs/content/get-started/set-up/index.html', '/index.html#get-started'],
   ['/docs/content/design/getting-started.html', '/get-started/for-designers.html'],
-  ['/get-started/set-up/for-designers.html', '/get-started/for-designers.html'],
-  ['/docs/content/get-started/set-up/for-designers.html', '/get-started/for-designers.html'],
   ['/docs/content/develop/getting-started.html', '/get-started/for-developers.html'],
-  ['/get-started/set-up/for-developers.html', '/get-started/for-developers.html'],
-  ['/docs/content/get-started/set-up/for-developers.html', '/get-started/for-developers.html'],
   ['/docs/content/design/figma-ui-kit.html', '/get-started/figma-ui-kit.html'],
-  ['/get-started/set-up/figma-ui-kit.html', '/get-started/figma-ui-kit.html'],
-  ['/docs/content/get-started/set-up/figma-ui-kit.html', '/get-started/figma-ui-kit.html'],
+  ['/templates/', '/get-started/templates.html'],
   ['/templates/index.html', '/get-started/templates.html'],
   ['/docs/content/design/theming.html', '/get-started/theming.html'],
   ['/docs/content/develop/theming.html', '/get-started/theming-for-developers.html'],
   ['/docs/content/design/extending.html', '/get-started/extending.html'],
-  ['/docs/content/develop/helpers.html', '/index.html#utility-classes'],
+  ['/core/layout/', '/core/page-layout/index.html'],
   ['/core/layout/index.html', '/core/page-layout/index.html'],
-  ['/components/forms-and-input/index.html', '/components/forms-and-inputs/index.html'],
 ]
 
-const legacyGuidanceComponents = [
-  'accordion',
-  'back-to-top',
-  'breadcrumbs',
-  'button',
-  'callout',
-  'card-carousel',
-  'card',
-  'content-block',
-  'cookie-consent',
-  'date-input',
-  'date-picker',
-  'dialog',
-  'file-upload',
-  'filters',
-  'footer',
-  'form',
-  'global-alert',
-  'header',
-  'hero-banner',
-  'hero-search',
-  'in-page-alert',
-  'in-page-nav',
-  'link-list',
-  'link',
-  'list-item',
-  'loader',
-  'main-nav',
-  'masthead',
-  'media',
-  'pagination',
-  'popover',
-  'progress-indicator',
-  'quick-exit',
-  'results-bar',
-  'select',
-  'show-more',
-  'side-nav',
-  'status-labels',
-  'steps',
-  'support-list',
-  'table',
-  'tabs',
-  'tag',
-  'tooltip',
-  'utility-list',
-]
-legacyGuidanceComponents.forEach((component) => {
-  legacyRedirects.push([
-    `/components/${component}/_guidance.html`,
-    `/components/${component}/index.html`,
-  ])
+changedProductionRoutes.forEach(([source, target]) => {
+  expectedRedirects.set(`${productionUrl}${source}`, `${productionUrl}${target}`)
 })
 
-legacyRedirects.forEach(([source, target]) => {
-  requiredRedirects.set(`${productionUrl}${source}`, `${productionUrl}${target}`)
-})
-
-requiredRedirects.forEach((target, source) => {
+expectedRedirects.forEach((target, source) => {
   assert(redirectMap.get(source) === target, `Missing or incorrect redirect: ${source} -> ${target}`)
 })
+redirects.forEach(({ source }) => {
+  assert(expectedRedirects.has(source), `Unexpected redirect for a non-production URL: ${source}`)
+})
+assert(
+  redirects.length === expectedRedirects.size,
+  `Expected exactly ${expectedRedirects.size} redirects, found ${redirects.length}`,
+)
 
 console.log('Docs IA validation passed')
