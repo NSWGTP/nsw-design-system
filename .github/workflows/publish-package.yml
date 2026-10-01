@@ -4,9 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       semver:
-        description: 'major, minor or patch'
+        description: 'major, minor or patch (ignored when publishing an existing version)'
         required: true
         default: 'patch'
+      publish_existing_version:
+        description: 'Existing tagged version to publish without creating a new release (for example, 3.28.0)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -26,6 +30,7 @@ jobs:
         with:
           fetch-depth: 0
           fetch-tags: true
+          ref: ${{ inputs.publish_existing_version != '' && format('refs/tags/v{0}', inputs.publish_existing_version) || github.ref }}
 
       - name: Setup Node
         uses: actions/setup-node@v7
@@ -41,30 +46,79 @@ jobs:
           npm --version
 
       - name: Verify branch
+        if: ${{ inputs.publish_existing_version == '' }}
         run: . ./build-script/verify-branch.sh "${GITHUB_REF_NAME}"
 
       - name: Assert clean working tree (fail fast, before rebase)
+        if: ${{ inputs.publish_existing_version == '' }}
         run: |
           git status --porcelain
           test -z "$(git status --porcelain)"
 
       - name: Sync branch (rebase on clean tree)
+        if: ${{ inputs.publish_existing_version == '' }}
         run: |
           git fetch --prune origin
           git pull --rebase origin "${GITHUB_REF_NAME}"
 
+      - name: Verify existing version is safe to publish
+        if: ${{ inputs.publish_existing_version != '' }}
+        env:
+          EXPECTED_VERSION: ${{ inputs.publish_existing_version }}
+        run: |
+          if [[ ! "$EXPECTED_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Expected a version in x.y.z format, got: $EXPECTED_VERSION" >&2
+            exit 1
+          fi
+
+          PACKAGE_VERSION=$(node --print "require('./package.json').version")
+          PACKAGE_NAME=$(node --print "require('./package.json').name")
+
+          if [[ "$PACKAGE_VERSION" != "$EXPECTED_VERSION" ]]; then
+            echo "package.json version $PACKAGE_VERSION does not match requested version $EXPECTED_VERSION" >&2
+            exit 1
+          fi
+
+          TAG_COMMIT=$(git rev-list -n 1 "refs/tags/v${EXPECTED_VERSION}")
+          HEAD_COMMIT=$(git rev-parse HEAD)
+          if [[ "$TAG_COMMIT" != "$HEAD_COMMIT" ]]; then
+            echo "Tag v${EXPECTED_VERSION} points to $TAG_COMMIT, but HEAD is $HEAD_COMMIT" >&2
+            exit 1
+          fi
+
+          npm view "$PACKAGE_NAME" versions --json > /tmp/published-versions.json
+          node - "$EXPECTED_VERSION" <<'NODE'
+          const fs = require('fs')
+          const expectedVersion = process.argv[2]
+          const publishedVersions = JSON.parse(fs.readFileSync('/tmp/published-versions.json', 'utf8'))
+          const versions = Array.isArray(publishedVersions) ? publishedVersions : [publishedVersions]
+
+          if (versions.includes(expectedVersion)) {
+            console.error(`${expectedVersion} is already published to npm`)
+            process.exit(1)
+          }
+          NODE
+
       - name: Install dependencies
+        if: ${{ inputs.publish_existing_version == '' }}
         run: npm ci
 
+      - name: Install dependencies without lifecycle scripts
+        if: ${{ inputs.publish_existing_version != '' }}
+        run: npm ci --ignore-scripts
+
       - name: Build release (may write files like CHANGELOG.md)
-        run: npm run release:${{ github.event.inputs.semver }}
+        if: ${{ inputs.publish_existing_version == '' }}
+        run: npm run release:${{ inputs.semver }}
 
       - name: Configure git identity (local)
+        if: ${{ inputs.publish_existing_version == '' }}
         run: |
           git config user.name "$GITHUB_ACTOR"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
       - name: Commit changes + create tag
+        if: ${{ inputs.publish_existing_version == '' }}
         run: |
           npm run commit
           npm run git-tag
