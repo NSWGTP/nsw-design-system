@@ -99,6 +99,12 @@ jobs:
           }
           NODE
 
+      - name: Align package metadata with provenance repository
+        if: ${{ inputs.publish_existing_version != '' }}
+        run: |
+          npm pkg set "repository.url=https://github.com/${GITHUB_REPOSITORY}.git"
+          npm pkg set "bugs.url=https://github.com/${GITHUB_REPOSITORY}/issues"
+
       - name: Install dependencies
         if: ${{ inputs.publish_existing_version == '' }}
         run: npm ci
