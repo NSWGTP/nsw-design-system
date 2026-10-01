@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head><script async data-category="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-49T9M12F86"></script>
+<script data-category="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49T9M12F86');
+</script>
+  <script data-category="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2NKBBJZ');</script>
+  
+  <title>Popover: Demo &amp; code - NSW Digital Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.nsw.gov.au/nsw-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="https://designsystem.nsw.gov.au/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="https://designsystem.nsw.gov.au/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="https://designsystem.nsw.gov.au/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://designsystem.nsw.gov.au/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="NSW Design System" />
+  <link rel="manifest" href="https://designsystem.nsw.gov.au/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://designsystem.nsw.gov.au/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for NSW Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="https://designsystem.nsw.gov.au/cookie-consent-config.js"></script>
+</head>
+
+<body class="nsw-docs-demo">
+
+
+<header class="nsw-header nsw-color-swatches-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__inner nsw-color-swatches-header__inner">
+      <a class="nsw-link nsw-link--icon nsw-color-swatches-header__back" href="https://designsystem.nsw.gov.au/components/popover/index.html">
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">west</span>
+        <span>Back</span>
+      </a>
+      <div class="nsw-color-swatches js-color-swatches">
+        <legend class="nsw-color-swatches__legend" aria-live="polite" aria-atomic="true"><span class="nsw-color-swatches__color js-color-swatches__color">Blue 01</span></legend>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="nsw-section">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h1>Popover: Demo &amp; code</h1>
+            <h2 class="nsw-p-top-0">Position</h2>
+            <p>Places the Popover relative to the trigger element.</p>
+            
+            <h3 class="h4 nsw-p-0">Top</h3>
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-default" data-popover-position="top" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-top-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-start-default" data-popover-position="top-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top Start</span></button>
+                
+                <div id="popover-top-start-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-end-default" data-popover-position="top-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top End</span></button>
+                
+                <div id="popover-top-end-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-default" data-popover-position="top" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-start-default" data-popover-position="top-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-start-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-end-default" data-popover-position="top-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-end-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-default" data-popover-position="top" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-start-default" data-popover-position="top-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-start-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-end-default" data-popover-position="top-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-end-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3 class="h4 nsw-p-0">Right</h3>
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-default" data-popover-position="right" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Right</span></button>
+                
+                <div id="popover-right-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-start-default" data-popover-position="right-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Right Start</span></button>
+                
+                <div id="popover-right-start-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-end-default" data-popover-position="right-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Right End</span></button>
+                
+                <div id="popover-right-end-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-default" data-popover-position="right" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-start-default" data-popover-position="right-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-start-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-end-default" data-popover-position="right-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-end-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-default" data-popover-position="right" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-start-default" data-popover-position="right-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-start-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-end-default" data-popover-position="right-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-end-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3 class="h4 nsw-p-0">Bottom</h3>
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-default" data-popover-position="bottom" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Bottom</span></button>
+                
+                <div id="popover-bottom-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-start-default" data-popover-position="bottom-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Bottom Start</span></button>
+                
+                <div id="popover-bottom-start-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-end-default" data-popover-position="bottom-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Bottom End</span></button>
+                
+                <div id="popover-bottom-end-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-default" data-popover-position="bottom" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-start-default" data-popover-position="bottom-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-start-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-end-default" data-popover-position="bottom-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-end-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-default" data-popover-position="bottom" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-start-default" data-popover-position="bottom-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-start-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-end-default" data-popover-position="bottom-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-end-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3 class="h4 nsw-p-0">Left</h3>
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-default" data-popover-position="left" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Left</span></button>
+                
+                <div id="popover-left-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-start-default" data-popover-position="left-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Left Start</span></button>
+                
+                <div id="popover-left-start-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-end-default" data-popover-position="left-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Left End</span></button>
+                
+                <div id="popover-left-end-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-default" data-popover-position="left" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-start-default" data-popover-position="left-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-start-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-end-default" data-popover-position="left-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-end-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-default" data-popover-position="left" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-start-default" data-popover-position="left-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-start-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-end-default" data-popover-position="left-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-end-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h2>Offset</h2>
+            
+            <p>A data-attribute <code>data-popover-gap</code> argument that offsets the distance between the trigger and Popover.</p>
+            
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-20-default" data-popover-position="top" data-popover-gap="20"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-20-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-30-default" data-popover-position="top" data-popover-gap="30"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-30-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-40-default" data-popover-position="top" data-popover-gap="40"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-40-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-50-default" data-popover-position="top" data-popover-gap="50"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-50-default" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-20-default" data-popover-position="top" data-popover-gap="20">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-20-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-30-default" data-popover-position="top" data-popover-gap="30">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-30-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-40-default" data-popover-position="top" data-popover-gap="40">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-40-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-50-default" data-popover-position="top" data-popover-gap="50">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-50-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-20-default" data-popover-position="top" data-popover-gap="20">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-20-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-30-default" data-popover-position="top" data-popover-gap="30">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-30-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-40-default" data-popover-position="top" data-popover-gap="40">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-40-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-50-default" data-popover-position="top" data-popover-gap="50">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-50-default" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-light">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h2 class="nsw-p-top-0">Position</h2>
+            <p>Places the Popover relative to the trigger element.</p>
+            
+            <h3 class="h4 nsw-p-0">Top</h3>
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-brand-light" data-popover-position="top" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-top-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-start-brand-light" data-popover-position="top-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top Start</span></button>
+                
+                <div id="popover-top-start-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-end-brand-light" data-popover-position="top-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top End</span></button>
+                
+                <div id="popover-top-end-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-brand-light" data-popover-position="top" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-start-brand-light" data-popover-position="top-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-start-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-end-brand-light" data-popover-position="top-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-end-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-brand-light" data-popover-position="top" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-start-brand-light" data-popover-position="top-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-start-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-end-brand-light" data-popover-position="top-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-end-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3 class="h4 nsw-p-0">Right</h3>
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-brand-light" data-popover-position="right" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Right</span></button>
+                
+                <div id="popover-right-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-start-brand-light" data-popover-position="right-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Right Start</span></button>
+                
+                <div id="popover-right-start-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-end-brand-light" data-popover-position="right-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Right End</span></button>
+                
+                <div id="popover-right-end-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-brand-light" data-popover-position="right" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-start-brand-light" data-popover-position="right-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-start-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-end-brand-light" data-popover-position="right-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-end-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-brand-light" data-popover-position="right" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-start-brand-light" data-popover-position="right-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-start-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-end-brand-light" data-popover-position="right-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-end-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3 class="h4 nsw-p-0">Bottom</h3>
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-brand-light" data-popover-position="bottom" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Bottom</span></button>
+                
+                <div id="popover-bottom-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-start-brand-light" data-popover-position="bottom-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Bottom Start</span></button>
+                
+                <div id="popover-bottom-start-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-end-brand-light" data-popover-position="bottom-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Bottom End</span></button>
+                
+                <div id="popover-bottom-end-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-brand-light" data-popover-position="bottom" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-start-brand-light" data-popover-position="bottom-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-start-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-end-brand-light" data-popover-position="bottom-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-end-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-brand-light" data-popover-position="bottom" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-start-brand-light" data-popover-position="bottom-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-start-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-end-brand-light" data-popover-position="bottom-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-end-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3 class="h4 nsw-p-0">Left</h3>
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-brand-light" data-popover-position="left" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Left</span></button>
+                
+                <div id="popover-left-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-start-brand-light" data-popover-position="left-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Left Start</span></button>
+                
+                <div id="popover-left-start-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-end-brand-light" data-popover-position="left-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Left End</span></button>
+                
+                <div id="popover-left-end-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-brand-light" data-popover-position="left" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-start-brand-light" data-popover-position="left-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-start-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-end-brand-light" data-popover-position="left-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-end-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-brand-light" data-popover-position="left" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-start-brand-light" data-popover-position="left-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-start-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-end-brand-light" data-popover-position="left-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-end-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h2>Offset</h2>
+            
+            <p>A data-attribute <code>data-popover-gap</code> argument that offsets the distance between the trigger and Popover.</p>
+            
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-20-brand-light" data-popover-position="top" data-popover-gap="20"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-20-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-30-brand-light" data-popover-position="top" data-popover-gap="30"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-30-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-40-brand-light" data-popover-position="top" data-popover-gap="40"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-40-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-50-brand-light" data-popover-position="top" data-popover-gap="50"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-50-brand-light" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-20-brand-light" data-popover-position="top" data-popover-gap="20">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-20-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-30-brand-light" data-popover-position="top" data-popover-gap="30">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-30-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-40-brand-light" data-popover-position="top" data-popover-gap="40">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-40-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-50-brand-light" data-popover-position="top" data-popover-gap="50">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-50-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-20-brand-light" data-popover-position="top" data-popover-gap="20">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-20-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-30-brand-light" data-popover-position="top" data-popover-gap="30">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-30-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-40-brand-light" data-popover-position="top" data-popover-gap="40">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-40-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-50-brand-light" data-popover-position="top" data-popover-gap="50">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-50-brand-light" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-dark nsw-section--invert">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h2 class="nsw-p-top-0">Position</h2>
+            <p>Places the Popover relative to the trigger element.</p>
+            
+            <h3 class="h4 nsw-p-0">Top</h3>
+            <div class="nsw-docs__example nsw-section--invert nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-inverted" data-popover-position="top" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-top-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-start-inverted" data-popover-position="top-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top Start</span></button>
+                
+                <div id="popover-top-start-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-end-inverted" data-popover-position="top-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top End</span></button>
+                
+                <div id="popover-top-end-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-inverted" data-popover-position="top" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-start-inverted" data-popover-position="top-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-start-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-end-inverted" data-popover-position="top-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-end-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-inverted" data-popover-position="top" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-start-inverted" data-popover-position="top-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-start-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-top-end-inverted" data-popover-position="top-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-top-end-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3 class="h4 nsw-p-0">Right</h3>
+            <div class="nsw-docs__example nsw-section--invert nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-inverted" data-popover-position="right" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Right</span></button>
+                
+                <div id="popover-right-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-start-inverted" data-popover-position="right-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Right Start</span></button>
+                
+                <div id="popover-right-start-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-end-inverted" data-popover-position="right-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Right End</span></button>
+                
+                <div id="popover-right-end-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-inverted" data-popover-position="right" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-start-inverted" data-popover-position="right-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-start-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-end-inverted" data-popover-position="right-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-end-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-inverted" data-popover-position="right" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-start-inverted" data-popover-position="right-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-start-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-right-end-inverted" data-popover-position="right-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Right End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-right-end-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3 class="h4 nsw-p-0">Bottom</h3>
+            <div class="nsw-docs__example nsw-section--invert nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-inverted" data-popover-position="bottom" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Bottom</span></button>
+                
+                <div id="popover-bottom-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-start-inverted" data-popover-position="bottom-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Bottom Start</span></button>
+                
+                <div id="popover-bottom-start-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-end-inverted" data-popover-position="bottom-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Bottom End</span></button>
+                
+                <div id="popover-bottom-end-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-inverted" data-popover-position="bottom" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-start-inverted" data-popover-position="bottom-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-start-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-end-inverted" data-popover-position="bottom-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-end-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-inverted" data-popover-position="bottom" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-start-inverted" data-popover-position="bottom-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-start-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-bottom-end-inverted" data-popover-position="bottom-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Bottom End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-bottom-end-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3 class="h4 nsw-p-0">Left</h3>
+            <div class="nsw-docs__example nsw-section--invert nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-inverted" data-popover-position="left" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Left</span></button>
+                
+                <div id="popover-left-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-start-inverted" data-popover-position="left-start" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Left Start</span></button>
+                
+                <div id="popover-left-start-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-end-inverted" data-popover-position="left-end" data-popover-gap="10"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Left End</span></button>
+                
+                <div id="popover-left-end-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-inverted" data-popover-position="left" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-start-inverted" data-popover-position="left-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-start-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-end-inverted" data-popover-position="left-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-end-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-inverted" data-popover-position="left" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-start-inverted" data-popover-position="left-start" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left Start\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-start-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-left-end-inverted" data-popover-position="left-end" data-popover-gap="10">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Left End\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-left-end-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h2>Offset</h2>
+            
+            <p>A data-attribute <code>data-popover-gap</code> argument that offsets the distance between the trigger and Popover.</p>
+            
+            <div class="nsw-docs__example nsw-section--invert nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-list nsw-list--8">
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-20-inverted" data-popover-position="top" data-popover-gap="20"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-20-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-30-inverted" data-popover-position="top" data-popover-gap="30"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-30-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-40-inverted" data-popover-position="top" data-popover-gap="40"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-40-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                <button type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-50-inverted" data-popover-position="top" data-popover-gap="50"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info</span><span>Open Top</span></button>
+                
+                <div id="popover-50-inverted" class="nsw-popover">
+                  <div class="nsw-p-sm">
+                    <h4>Family rebate</h4>
+                    <p>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                    <p><a class="js-link" href="https://digital.nsw.gov.au">
+                  <span>Get started</span><span class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new</span>
+                </a>
+                </p>
+                  </div>
+                </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-20-inverted" data-popover-position="top" data-popover-gap="20">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-20-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-30-inverted" data-popover-position="top" data-popover-gap="30">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-30-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-40-inverted" data-popover-position="top" data-popover-gap="40">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-40-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-50-inverted" data-popover-position="top" data-popover-gap="50">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-50-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-list nsw-list--8">\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-20-inverted" data-popover-position="top" data-popover-gap="20">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-20-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-30-inverted" data-popover-position="top" data-popover-gap="30">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-30-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-40-inverted" data-popover-position="top" data-popover-gap="40">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-40-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3Cbutton type="button" class="nsw-button nsw-button--dark-outline js-popover" aria-controls="popover-50-inverted" data-popover-position="top" data-popover-gap="50">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">info\x3C/span>\x3Cspan>Open Top\x3C/span>\x3C/button>\n\n\x3Cdiv id="popover-50-inverted" class="nsw-popover">\n  \x3Cdiv class="nsw-p-sm">\n    \x3Ch4>Family rebate\x3C/h4>\n    \x3Cp>Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.\x3C/p>\n    \x3Cp>\x3Ca class="js-link" href="https://digital.nsw.gov.au">\n  \x3Cspan>Get started\x3C/span>\x3Cspan class="material-icons nsw-material-icons" title="(opens in new window)">open_in_new\x3C/span>\n\x3C/a>\n\x3C/p>\n  \x3C/div>\n\x3C/div>\n\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://designsystem.nsw.gov.au/docs/js/docs.js"></script>
+
+  <button type="button" class="nsw-button nsw-button--dark nsw-button--flex nsw-back-to-top js-back-to-top">
+  </button>  <script src="https://designsystem.nsw.gov.au/js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+  </script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

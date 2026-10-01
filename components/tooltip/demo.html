@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head><script async data-category="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-49T9M12F86"></script>
+<script data-category="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49T9M12F86');
+</script>
+  <script data-category="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2NKBBJZ');</script>
+  
+  <title>Tooltip: Demo &amp; code - NSW Digital Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.nsw.gov.au/nsw-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="https://designsystem.nsw.gov.au/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="https://designsystem.nsw.gov.au/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="https://designsystem.nsw.gov.au/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://designsystem.nsw.gov.au/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="NSW Design System" />
+  <link rel="manifest" href="https://designsystem.nsw.gov.au/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://designsystem.nsw.gov.au/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for NSW Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="https://designsystem.nsw.gov.au/cookie-consent-config.js"></script>
+</head>
+
+<body class="nsw-docs-demo">
+
+
+<header class="nsw-header nsw-color-swatches-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__inner nsw-color-swatches-header__inner">
+      <a class="nsw-link nsw-link--icon nsw-color-swatches-header__back" href="https://designsystem.nsw.gov.au/components/tooltip/index.html">
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">west</span>
+        <span>Back</span>
+      </a>
+      <div class="nsw-color-swatches js-color-swatches">
+        <legend class="nsw-color-swatches__legend" aria-live="polite" aria-atomic="true"><span class="nsw-color-swatches__color js-color-swatches__color">Blue 01</span></legend>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="nsw-section">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h1>Tooltip: Demo &amp; code</h1>
+            <div class="nsw-tabs js-tabs">
+              <ul class="nsw-tabs__list">
+                <li><a href="#light-default" class="js-tabs-fixed">Dark</a></li>
+                <li><a href="#dark-default" class="js-tabs-fixed">Light</a></li>
+              </ul>
+            
+              <section id="light-default"  class="nsw-tabs__content nsw-tabs__content--side-flush">
+                
+                <h3 class="nsw-m-bottom-sm">Tooltip</h3>
+            
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <p>He was drifting on the open sea when <span class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="dark">the marlin</span> tugged fiercely at the line. In that moment, Santiago felt both <span class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="dark">endurance</span> and <span class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="dark">reverence</span> as the line cut deep into his hands.</p>
+                
+                <p>Through his solitary struggle, Santiago comes to understand that:</p>
+                
+                <ul>
+                  <li>Victory can come with <span class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="dark">deep sacrifice</span></li>
+                  <li>The ocean is not only his livelihood but a mirror of his <span class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="dark">soul</span></li>
+                  <li><span class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="dark">Pride</span> can be both noble and punishing</li>
+                </ul>
+                
+                <p>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. <a href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current</a>.</p>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="dark">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="dark">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="dark">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="dark">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="dark">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="dark">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="dark">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="dark">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="dark">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="dark">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="dark">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="dark">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+                <h3 class="nsw-m-bottom-sm">Toggletip</h3>
+            
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <p>In the quiet desperation of the third day, Santiago battles <span aria-controls="toggletip-example-dark-default-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin</span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their <span aria-controls="toggletip-example-dark-default-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences</span> — in what remains unspoken between man, sea, and sky.</p>
+                
+                <div id="toggletip-example-dark-default-1" class="nsw-toggletip__element nsw-toggletip__element--dark">
+                  <p>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.</p>
+                </div>
+                
+                <div id="toggletip-example-dark-default-2" class="nsw-toggletip__element nsw-toggletip__element--dark">
+                  <p>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-dark-default-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-dark-default-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-dark-default-1" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-dark-default-2" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-dark-default-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-dark-default-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-dark-default-1" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-dark-default-2" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+              </section>
+              
+              <section id="dark-default" class="nsw-section--invert nsw-tabs__content nsw-tabs__content--side-flush">
+            
+                <h3 class="nsw-text--dark nsw-m-bottom-sm">Tooltip</h3>
+            
+            <div class="nsw-docs__example nsw-docs__example--dark">
+              <div class="nsw-docs__component">
+                <p>He was drifting on the open sea when <span class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="light">the marlin</span> tugged fiercely at the line. In that moment, Santiago felt both <span class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="light">endurance</span> and <span class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="light">reverence</span> as the line cut deep into his hands.</p>
+                
+                <p>Through his solitary struggle, Santiago comes to understand that:</p>
+                
+                <ul>
+                  <li>Victory can come with <span class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="light">deep sacrifice</span></li>
+                  <li>The ocean is not only his livelihood but a mirror of his <span class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="light">soul</span></li>
+                  <li><span class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="light">Pride</span> can be both noble and punishing</li>
+                </ul>
+                
+                <p>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. <a href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current</a>.</p>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="light">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="light">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="light">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="light">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="light">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="light">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="light">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="light">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="light">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="light">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="light">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="light">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+                <h3 class="nsw-text--dark nsw-m-bottom-sm">Toggletip</h3>
+            
+            <div class="nsw-docs__example nsw-docs__example--dark">
+              <div class="nsw-docs__component">
+                <p>In the quiet desperation of the third day, Santiago battles <span aria-controls="toggletip-example-light-default-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin</span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their <span aria-controls="toggletip-example-light-default-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences</span> — in what remains unspoken between man, sea, and sky.</p>
+                
+                <div id="toggletip-example-light-default-1" class="nsw-toggletip__element nsw-toggletip__element--light">
+                  <p>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.</p>
+                </div>
+                
+                <div id="toggletip-example-light-default-2" class="nsw-toggletip__element nsw-toggletip__element--light">
+                  <p>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-light-default-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-light-default-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-light-default-1" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-light-default-2" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-light-default-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-light-default-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-light-default-1" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-light-default-2" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+              </section>
+            </div>
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-light">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <div class="nsw-tabs js-tabs">
+              <ul class="nsw-tabs__list">
+                <li><a href="#light-brand-light" class="js-tabs-fixed">Dark</a></li>
+                <li><a href="#dark-brand-light" class="js-tabs-fixed">Light</a></li>
+              </ul>
+            
+              <section id="light-brand-light"  class="nsw-tabs__content nsw-tabs__content--side-flush">
+                
+                <h3 class="nsw-m-bottom-sm">Tooltip</h3>
+            
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <p>He was drifting on the open sea when <span class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="dark">the marlin</span> tugged fiercely at the line. In that moment, Santiago felt both <span class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="dark">endurance</span> and <span class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="dark">reverence</span> as the line cut deep into his hands.</p>
+                
+                <p>Through his solitary struggle, Santiago comes to understand that:</p>
+                
+                <ul>
+                  <li>Victory can come with <span class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="dark">deep sacrifice</span></li>
+                  <li>The ocean is not only his livelihood but a mirror of his <span class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="dark">soul</span></li>
+                  <li><span class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="dark">Pride</span> can be both noble and punishing</li>
+                </ul>
+                
+                <p>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. <a href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current</a>.</p>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="dark">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="dark">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="dark">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="dark">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="dark">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="dark">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="dark">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="dark">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="dark">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="dark">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="dark">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="dark">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+                <h3 class="nsw-m-bottom-sm">Toggletip</h3>
+            
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <p>In the quiet desperation of the third day, Santiago battles <span aria-controls="toggletip-example-dark-brand-light-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin</span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their <span aria-controls="toggletip-example-dark-brand-light-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences</span> — in what remains unspoken between man, sea, and sky.</p>
+                
+                <div id="toggletip-example-dark-brand-light-1" class="nsw-toggletip__element nsw-toggletip__element--dark">
+                  <p>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.</p>
+                </div>
+                
+                <div id="toggletip-example-dark-brand-light-2" class="nsw-toggletip__element nsw-toggletip__element--dark">
+                  <p>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-dark-brand-light-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-dark-brand-light-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-dark-brand-light-1" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-dark-brand-light-2" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-dark-brand-light-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-dark-brand-light-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-dark-brand-light-1" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-dark-brand-light-2" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+              </section>
+              
+              <section id="dark-brand-light" class="nsw-section--invert nsw-tabs__content nsw-tabs__content--side-flush">
+            
+                <h3 class="nsw-text--dark nsw-m-bottom-sm">Tooltip</h3>
+            
+            <div class="nsw-docs__example nsw-docs__example--dark">
+              <div class="nsw-docs__component">
+                <p>He was drifting on the open sea when <span class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="light">the marlin</span> tugged fiercely at the line. In that moment, Santiago felt both <span class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="light">endurance</span> and <span class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="light">reverence</span> as the line cut deep into his hands.</p>
+                
+                <p>Through his solitary struggle, Santiago comes to understand that:</p>
+                
+                <ul>
+                  <li>Victory can come with <span class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="light">deep sacrifice</span></li>
+                  <li>The ocean is not only his livelihood but a mirror of his <span class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="light">soul</span></li>
+                  <li><span class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="light">Pride</span> can be both noble and punishing</li>
+                </ul>
+                
+                <p>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. <a href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current</a>.</p>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="light">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="light">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="light">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="light">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="light">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="light">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="light">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="light">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="light">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="light">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="light">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="light">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+                <h3 class="nsw-text--dark nsw-m-bottom-sm">Toggletip</h3>
+            
+            <div class="nsw-docs__example nsw-docs__example--dark">
+              <div class="nsw-docs__component">
+                <p>In the quiet desperation of the third day, Santiago battles <span aria-controls="toggletip-example-light-brand-light-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin</span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their <span aria-controls="toggletip-example-light-brand-light-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences</span> — in what remains unspoken between man, sea, and sky.</p>
+                
+                <div id="toggletip-example-light-brand-light-1" class="nsw-toggletip__element nsw-toggletip__element--light">
+                  <p>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.</p>
+                </div>
+                
+                <div id="toggletip-example-light-brand-light-2" class="nsw-toggletip__element nsw-toggletip__element--light">
+                  <p>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-light-brand-light-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-light-brand-light-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-light-brand-light-1" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-light-brand-light-2" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-light-brand-light-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-light-brand-light-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-light-brand-light-1" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-light-brand-light-2" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+              </section>
+            </div>
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-dark nsw-section--invert">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <div class="nsw-tabs js-tabs">
+              <ul class="nsw-tabs__list">
+                <li><a href="#light-inverted" class="js-tabs-fixed">Dark</a></li>
+                <li><a href="#dark-inverted" class="js-tabs-fixed">Light</a></li>
+              </ul>
+            
+              <section id="light-inverted"  class="nsw-tabs__content nsw-tabs__content--side-flush">
+                
+                <h3 class="nsw-m-bottom-sm">Tooltip</h3>
+            
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <p>He was drifting on the open sea when <span class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="dark">the marlin</span> tugged fiercely at the line. In that moment, Santiago felt both <span class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="dark">endurance</span> and <span class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="dark">reverence</span> as the line cut deep into his hands.</p>
+                
+                <p>Through his solitary struggle, Santiago comes to understand that:</p>
+                
+                <ul>
+                  <li>Victory can come with <span class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="dark">deep sacrifice</span></li>
+                  <li>The ocean is not only his livelihood but a mirror of his <span class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="dark">soul</span></li>
+                  <li><span class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="dark">Pride</span> can be both noble and punishing</li>
+                </ul>
+                
+                <p>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. <a href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current</a>.</p>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="dark">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="dark">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="dark">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="dark">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="dark">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="dark">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="dark">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="dark">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="dark">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="dark">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="dark">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="dark">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+                <h3 class="nsw-m-bottom-sm">Toggletip</h3>
+            
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <p>In the quiet desperation of the third day, Santiago battles <span aria-controls="toggletip-example-dark-inverted-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin</span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their <span aria-controls="toggletip-example-dark-inverted-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences</span> — in what remains unspoken between man, sea, and sky.</p>
+                
+                <div id="toggletip-example-dark-inverted-1" class="nsw-toggletip__element nsw-toggletip__element--dark">
+                  <p>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.</p>
+                </div>
+                
+                <div id="toggletip-example-dark-inverted-2" class="nsw-toggletip__element nsw-toggletip__element--dark">
+                  <p>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-dark-inverted-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-dark-inverted-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-dark-inverted-1" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-dark-inverted-2" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-dark-inverted-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-dark-inverted-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-dark-inverted-1" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-dark-inverted-2" class="nsw-toggletip__element nsw-toggletip__element--dark">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+              </section>
+              
+              <section id="dark-inverted" class="nsw-section--invert nsw-tabs__content nsw-tabs__content--side-flush">
+            
+                <h3 class="nsw-text--dark nsw-m-bottom-sm">Tooltip</h3>
+            
+            <div class="nsw-docs__example nsw-docs__example--dark nsw-section--invert">
+              <div class="nsw-docs__component">
+                <p>He was drifting on the open sea when <span class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="light">the marlin</span> tugged fiercely at the line. In that moment, Santiago felt both <span class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="light">endurance</span> and <span class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="light">reverence</span> as the line cut deep into his hands.</p>
+                
+                <p>Through his solitary struggle, Santiago comes to understand that:</p>
+                
+                <ul>
+                  <li>Victory can come with <span class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="light">deep sacrifice</span></li>
+                  <li>The ocean is not only his livelihood but a mirror of his <span class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="light">soul</span></li>
+                  <li><span class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="light">Pride</span> can be both noble and punishing</li>
+                </ul>
+                
+                <p>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. <a href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current</a>.</p>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="light">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="light">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="light">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="light">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="light">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="light">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>He was drifting on the open sea when \x3Cspan class="nsw-tooltip js-tooltip" title="A mighty fish representing a spiritual and physical test" data-theme="light">the marlin\x3C/span> tugged fiercely at the line. In that moment, Santiago felt both \x3Cspan class="nsw-tooltip js-tooltip" title="The emotional and physical perseverance of the old man" data-theme="light">endurance\x3C/span> and \x3Cspan class="nsw-tooltip js-tooltip" title="Respect for the fish and its strength" data-theme="light">reverence\x3C/span> as the line cut deep into his hands.\x3C/p>\n\n\x3Cp>Through his solitary struggle, Santiago comes to understand that:\x3C/p>\n\n\x3Cul>\n  \x3Cli>Victory can come with \x3Cspan class="nsw-tooltip js-tooltip" title="The cost of triumph may include irreversible loss" data-theme="light">deep sacrifice\x3C/span>\x3C/li>\n  \x3Cli>The ocean is not only his livelihood but a mirror of his \x3Cspan class="nsw-tooltip js-tooltip" title="Santiago's reflective inner world shaped by hardship" data-theme="light">soul\x3C/span>\x3C/li>\n  \x3Cli>\x3Cspan class="nsw-tooltip js-tooltip" title="His pride drives him to continue, even past the point of reason" data-theme="light">Pride\x3C/span> can be both noble and punishing\x3C/li>\n\x3C/ul>\n\n\x3Cp>These realisations rose slowly from the long struggle — like the swell of the sea beneath Santiago's skiff, hard-won and without fanfare. \x3Ca href="https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea" target="_blank">Walk further into the current\x3C/a>.\x3C/p>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+                <h3 class="nsw-text--dark nsw-m-bottom-sm">Toggletip</h3>
+            
+            <div class="nsw-docs__example nsw-docs__example--dark nsw-section--invert">
+              <div class="nsw-docs__component">
+                <p>In the quiet desperation of the third day, Santiago battles <span aria-controls="toggletip-example-light-inverted-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin</span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their <span aria-controls="toggletip-example-light-inverted-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences</span> — in what remains unspoken between man, sea, and sky.</p>
+                
+                <div id="toggletip-example-light-inverted-1" class="nsw-toggletip__element nsw-toggletip__element--light">
+                  <p>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.</p>
+                </div>
+                
+                <div id="toggletip-example-light-inverted-2" class="nsw-toggletip__element nsw-toggletip__element--light">
+                  <p>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-light-inverted-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-light-inverted-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-light-inverted-1" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-light-inverted-2" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cp>In the quiet desperation of the third day, Santiago battles \x3Cspan aria-controls="toggletip-example-light-inverted-1" class="nsw-toggletip js-toggletip" data-title="A majestic fish symbolising pride, endurance, and loss">the marlin\x3C/span>, tied to his skiff and spirit. As exhaustion deepens, the struggle becomes not just physical, but spiritual — a reflection on pride, endurance, and the quiet dignity of effort. Some stories hold truths not in their facts, but in their \x3Cspan aria-controls="toggletip-example-light-inverted-2" class="nsw-toggletip js-toggletip" data-title="Void of anything">silences\x3C/span> — in what remains unspoken between man, sea, and sky.\x3C/p>\n\n\x3Cdiv id="toggletip-example-light-inverted-1" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>The marlin embodies Santiago's greatest struggle, blending themes of isolation, respect, and the dignity of effort.\x3C/p>\n\x3C/div>\n\n\x3Cdiv id="toggletip-example-light-inverted-2" class="nsw-toggletip__element nsw-toggletip__element--light">\n  \x3Cp>Silences hold truths not in their facts, but in what remains unspoken between man, sea, and sky.\x3C/p>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+              </section>
+            </div>
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://designsystem.nsw.gov.au/docs/js/docs.js"></script>
+
+  <button type="button" class="nsw-button nsw-button--dark nsw-button--flex nsw-back-to-top js-back-to-top">
+  </button>  <script src="https://designsystem.nsw.gov.au/js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+  </script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

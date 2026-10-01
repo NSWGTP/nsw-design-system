@@ -7211,6 +7211,7 @@
     const hasDocument = typeof document !== 'undefined' && hasWindow;
     const copyHeadingsClass = 'js-copy-headings';
     const headingSelector = 'h2';
+    const headingExclusionSelector = ['.nsw-card__title', '.nsw-carousel', '.nsw-steps', 'dialog', '[role="dialog"]'].join(', ');
     const headingWrapperClass = 'nsw-heading-link';
     const headingClass = 'nsw-heading-link__heading';
     const headingInitAttr = 'data-heading-link-init';
@@ -7437,6 +7438,7 @@
       roots.forEach(root => {
         const headings = root.querySelectorAll(headingSelector);
         headings.forEach(heading => {
+          if (heading.closest(headingExclusionSelector)) return;
           if (heading.getAttribute(headingInitAttr) === '1') return;
           enhanceHeading(heading, usedIds);
         });

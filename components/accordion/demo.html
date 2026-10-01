@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head><script async data-category="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-49T9M12F86"></script>
+<script data-category="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49T9M12F86');
+</script>
+  <script data-category="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2NKBBJZ');</script>
+  
+  <title>Accordion: Demo &amp; code - NSW Digital Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.nsw.gov.au/nsw-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="https://designsystem.nsw.gov.au/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="https://designsystem.nsw.gov.au/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="https://designsystem.nsw.gov.au/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://designsystem.nsw.gov.au/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="NSW Design System" />
+  <link rel="manifest" href="https://designsystem.nsw.gov.au/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://designsystem.nsw.gov.au/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for NSW Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="https://designsystem.nsw.gov.au/cookie-consent-config.js"></script>
+</head>
+
+<body class="nsw-docs-demo">
+
+
+<header class="nsw-header nsw-color-swatches-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__inner nsw-color-swatches-header__inner">
+      <a class="nsw-link nsw-link--icon nsw-color-swatches-header__back" href="https://designsystem.nsw.gov.au/components/accordion/index.html">
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">west</span>
+        <span>Back</span>
+      </a>
+      <div class="nsw-color-swatches js-color-swatches">
+        <legend class="nsw-color-swatches__legend" aria-live="polite" aria-atomic="true"><span class="nsw-color-swatches__color js-color-swatches__color">Blue 01</span></legend>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="nsw-section">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h1>Accordion: Demo &amp; code</h1>
+              <h2>Details variation (CSS-core)</h2>
+            
+              <h3>Regular</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                    <div class="nsw-accordion--details js-accordion-details" id="accordion-4-default">
+                      <details class="nsw-accordion__item" open id="a1f9b3c2d7e4-default">
+                        <summary class="nsw-accordion__title">
+                          Integrating content into agile workflows
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="a1f9b3c2d7e4-default-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Build content into the sprint from day one. Treat words as part of the product, not an afterthought. Add content tasks to the backlog and review them in stand ups alongside design and development.</p><p>Collaborate with product owners to define a clear Definition of Done for content. Encourage early reviews of copy within design critiques so language decisions move at the same pace as the interface.</p><ul><li>Join daily stand ups and retrospectives to stay aligned</li><li>Include content tickets in sprint demos</li><li>Track feedback and updates using the same agile tools as your team</li></ul>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="b2d6e8f1a9c3-default">
+                        <summary class="nsw-accordion__title">
+                          Designing simple paths through complex tasks
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="b2d6e8f1a9c3-default-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Start by naming the single outcome the user needs to achieve. Remove anything that doesn’t help them get there.</p><p>Structure the page like a conversation: set expectations up front, group related steps, and explain why you’re asking for information.</p><ul><li>Lead with clear, task‑focused headings</li><li>Break long processes into confident, named steps</li><li>Use examples only where users typically hesitate</li></ul>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="c3e7a1b9d5f8-default">
+                        <summary class="nsw-accordion__title">
+                          Partnering with subject matter experts
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="c3e7a1b9d5f8-default-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Make it easy for SMEs to help. Share a short agenda and a live doc. Ask them to walk a realistic scenario instead of describing the system.</p><p>Capture source links and who approved wording so changes are auditable. Follow up with a redline or prototype to make feedback fast.</p><ul><li>Record facts with dates and owners</li><li>Translate jargon into plain language</li><li>Agree on the exact words users will see</li></ul>
+                          </div>
+                        </div>
+                      </details>
+                    </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-4-default">\n  \x3Cdetails class="nsw-accordion__item" open id="a1f9b3c2d7e4-default">\n    \x3Csummary class="nsw-accordion__title">\n      Integrating content into agile workflows\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="a1f9b3c2d7e4-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Build content into the sprint from day one. Treat words as part of the product, not an afterthought. Add content tasks to the backlog and review them in stand ups alongside design and development.\x3C/p>\x3Cp>Collaborate with product owners to define a clear Definition of Done for content. Encourage early reviews of copy within design critiques so language decisions move at the same pace as the interface.\x3C/p>\x3Cul>\x3Cli>Join daily stand ups and retrospectives to stay aligned\x3C/li>\x3Cli>Include content tickets in sprint demos\x3C/li>\x3Cli>Track feedback and updates using the same agile tools as your team\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="b2d6e8f1a9c3-default">\n    \x3Csummary class="nsw-accordion__title">\n      Designing simple paths through complex tasks\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="b2d6e8f1a9c3-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Start by naming the single outcome the user needs to achieve. Remove anything that doesn’t help them get there.\x3C/p>\x3Cp>Structure the page like a conversation: set expectations up front, group related steps, and explain why you’re asking for information.\x3C/p>\x3Cul>\x3Cli>Lead with clear, task‑focused headings\x3C/li>\x3Cli>Break long processes into confident, named steps\x3C/li>\x3Cli>Use examples only where users typically hesitate\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="c3e7a1b9d5f8-default">\n    \x3Csummary class="nsw-accordion__title">\n      Partnering with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="c3e7a1b9d5f8-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Make it easy for SMEs to help. Share a short agenda and a live doc. Ask them to walk a realistic scenario instead of describing the system.\x3C/p>\x3Cp>Capture source links and who approved wording so changes are auditable. Follow up with a redline or prototype to make feedback fast.\x3C/p>\x3Cul>\x3Cli>Record facts with dates and owners\x3C/li>\x3Cli>Translate jargon into plain language\x3C/li>\x3Cli>Agree on the exact words users will see\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-4-default">\n  \x3Cdetails class="nsw-accordion__item" open id="a1f9b3c2d7e4-default">\n    \x3Csummary class="nsw-accordion__title">\n      Integrating content into agile workflows\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="a1f9b3c2d7e4-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Build content into the sprint from day one. Treat words as part of the product, not an afterthought. Add content tasks to the backlog and review them in stand ups alongside design and development.\x3C/p>\x3Cp>Collaborate with product owners to define a clear Definition of Done for content. Encourage early reviews of copy within design critiques so language decisions move at the same pace as the interface.\x3C/p>\x3Cul>\x3Cli>Join daily stand ups and retrospectives to stay aligned\x3C/li>\x3Cli>Include content tickets in sprint demos\x3C/li>\x3Cli>Track feedback and updates using the same agile tools as your team\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="b2d6e8f1a9c3-default">\n    \x3Csummary class="nsw-accordion__title">\n      Designing simple paths through complex tasks\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="b2d6e8f1a9c3-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Start by naming the single outcome the user needs to achieve. Remove anything that doesn’t help them get there.\x3C/p>\x3Cp>Structure the page like a conversation: set expectations up front, group related steps, and explain why you’re asking for information.\x3C/p>\x3Cul>\x3Cli>Lead with clear, task‑focused headings\x3C/li>\x3Cli>Break long processes into confident, named steps\x3C/li>\x3Cli>Use examples only where users typically hesitate\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="c3e7a1b9d5f8-default">\n    \x3Csummary class="nsw-accordion__title">\n      Partnering with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="c3e7a1b9d5f8-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Make it easy for SMEs to help. Share a short agenda and a live doc. Ask them to walk a realistic scenario instead of describing the system.\x3C/p>\x3Cp>Capture source links and who approved wording so changes are auditable. Follow up with a redline or prototype to make feedback fast.\x3C/p>\x3Cul>\x3Cli>Record facts with dates and owners\x3C/li>\x3Cli>Translate jargon into plain language\x3C/li>\x3Cli>Agree on the exact words users will see\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <h3>Single item (no wrapper)</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                    <details class="nsw-accordion__item js-accordion-details" open id="13fbfoojb1j-default">
+                      <summary class="nsw-accordion__title">
+                        Sprint cadence or workflow
+                      </summary>
+                      <div class="nsw-accordion__content-wrap" id="13fbfoojb1j-default-panel">
+                        <div class="nsw-accordion__content">
+                          <p>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.</p><p>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.</p> 
+                        </div>
+                      </div>
+                    </details>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdetails class="nsw-accordion__item js-accordion-details" open id="13fbfoojb1j-default">\n  \x3Csummary class="nsw-accordion__title">\n    Sprint cadence or workflow\n  \x3C/summary>\n  \x3Cdiv class="nsw-accordion__content-wrap" id="13fbfoojb1j-default-panel">\n    \x3Cdiv class="nsw-accordion__content">\n      \x3Cp>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.\x3C/p>\x3Cp>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.\x3C/p> \n    \x3C/div>\n  \x3C/div>\n\x3C/details>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdetails class="nsw-accordion__item js-accordion-details" open id="13fbfoojb1j-default">\n  \x3Csummary class="nsw-accordion__title">\n    Sprint cadence or workflow\n  \x3C/summary>\n  \x3Cdiv class="nsw-accordion__content-wrap" id="13fbfoojb1j-default-panel">\n    \x3Cdiv class="nsw-accordion__content">\n      \x3Cp>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.\x3C/p>\x3Cp>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.\x3C/p> \n    \x3C/div>\n  \x3C/div>\n\x3C/details>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <h3>Toggle controls (progressively enhanced)</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                    <div class="nsw-accordion--details js-accordion-details" id="accordion-5-default">
+                      <div class="nsw-accordion__toggle">
+                        <button type="button" aria-label="Expand all sections">Expand all</button>
+                        <button type="button" aria-label="Collapse all sections">Collapse all</button>
+                      </div>
+                      <details class="nsw-accordion__item" id="d1e8a3b9f4c7-default">
+                        <summary class="nsw-accordion__title">
+                          Embedding content design in agile delivery
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="d1e8a3b9f4c7-default-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Bring content into every stage of the sprint, not just the end. Treat it like any other design asset: plan it, review it, and test it early.</p><p>When copy and interface evolve together, teams avoid last‑minute rewrites and mismatched intent.</p>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" open id="b3a2f7e6d9c1-default">
+                        <summary class="nsw-accordion__title">
+                          Making complex information easy to follow
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="b3a2f7e6d9c1-default-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Help users reach their goal quickly. Use strong verbs and avoid multi‑step sentences that hide the action.</p><ul><li>Cut instructions down to what matters</li><li>Show one decision at a time</li><li>Keep headings short and concrete</li></ul><p>Sometimes a simple label swap or reordered field makes the biggest difference.</p>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="e5c4b8d2a9f6-default">
+                        <summary class="nsw-accordion__title">
+                          Collaborating with subject matter experts
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="e5c4b8d2a9f6-default-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Ask SMEs to explain how people actually use a service, not just how it works on paper. Listen for pain points or unclear language that can inform your content choices.</p><p>Keep notes visible to everyone so edits don’t get lost. A few short comments are better than one long document review.</p><p>Follow up with a quick playback—what you heard, what will change, and what stays the same.</p>
+                          </div>
+                        </div>
+                      </details>
+                    </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-5-default">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdetails class="nsw-accordion__item" id="d1e8a3b9f4c7-default">\n    \x3Csummary class="nsw-accordion__title">\n      Embedding content design in agile delivery\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="d1e8a3b9f4c7-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Bring content into every stage of the sprint, not just the end. Treat it like any other design asset: plan it, review it, and test it early.\x3C/p>\x3Cp>When copy and interface evolve together, teams avoid last‑minute rewrites and mismatched intent.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" open id="b3a2f7e6d9c1-default">\n    \x3Csummary class="nsw-accordion__title">\n      Making complex information easy to follow\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="b3a2f7e6d9c1-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Help users reach their goal quickly. Use strong verbs and avoid multi‑step sentences that hide the action.\x3C/p>\x3Cul>\x3Cli>Cut instructions down to what matters\x3C/li>\x3Cli>Show one decision at a time\x3C/li>\x3Cli>Keep headings short and concrete\x3C/li>\x3C/ul>\x3Cp>Sometimes a simple label swap or reordered field makes the biggest difference.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="e5c4b8d2a9f6-default">\n    \x3Csummary class="nsw-accordion__title">\n      Collaborating with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="e5c4b8d2a9f6-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Ask SMEs to explain how people actually use a service, not just how it works on paper. Listen for pain points or unclear language that can inform your content choices.\x3C/p>\x3Cp>Keep notes visible to everyone so edits don’t get lost. A few short comments are better than one long document review.\x3C/p>\x3Cp>Follow up with a quick playback—what you heard, what will change, and what stays the same.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-5-default">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdetails class="nsw-accordion__item" id="d1e8a3b9f4c7-default">\n    \x3Csummary class="nsw-accordion__title">\n      Embedding content design in agile delivery\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="d1e8a3b9f4c7-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Bring content into every stage of the sprint, not just the end. Treat it like any other design asset: plan it, review it, and test it early.\x3C/p>\x3Cp>When copy and interface evolve together, teams avoid last‑minute rewrites and mismatched intent.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" open id="b3a2f7e6d9c1-default">\n    \x3Csummary class="nsw-accordion__title">\n      Making complex information easy to follow\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="b3a2f7e6d9c1-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Help users reach their goal quickly. Use strong verbs and avoid multi‑step sentences that hide the action.\x3C/p>\x3Cul>\x3Cli>Cut instructions down to what matters\x3C/li>\x3Cli>Show one decision at a time\x3C/li>\x3Cli>Keep headings short and concrete\x3C/li>\x3C/ul>\x3Cp>Sometimes a simple label swap or reordered field makes the biggest difference.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="e5c4b8d2a9f6-default">\n    \x3Csummary class="nsw-accordion__title">\n      Collaborating with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="e5c4b8d2a9f6-default-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Ask SMEs to explain how people actually use a service, not just how it works on paper. Listen for pain points or unclear language that can inform your content choices.\x3C/p>\x3Cp>Keep notes visible to everyone so edits don’t get lost. A few short comments are better than one long document review.\x3C/p>\x3Cp>Follow up with a quick playback—what you heard, what will change, and what stays the same.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <hr class="nsw-m-top-lg"/>
+            
+              <h2>Legacy variation (JS-core dependent)</h2>
+            
+              <h3>Accordion with expand/collapse all</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                  <div class="nsw-accordion js-accordion" id="accordion-1-default">
+                    <div class="nsw-accordion__toggle">
+                      <button type="button" aria-label="Expand all sections">Expand all</button>
+                      <button type="button" aria-label="Collapse all sections">Collapse all</button>
+                    </div>
+                    <div class="nsw-accordion__title nsw-accordion__open">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)</div>
+                    <div class="nsw-accordion__content">
+                      <p>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.</p><p>This grant scheme only applies to buying or building a new home.</p><p>You can make a claim if:</p><ul><li>your home is newly constructed and has a total value of less than $600,000</li><li>the land and the dwelling you intend to build has a combined value of less than $750,000.</li></ul>
+                    </div>
+                    <div class="nsw-accordion__title">HomeBuilder program</div>
+                    <div class="nsw-accordion__content">
+                      <p>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:</p><ul><li>sign the contract between 4 June 2020 and 31 December 2020</li><li>commence within 3 months of the contract date.</li></ul><p>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.</p>
+                    </div>
+                    <div class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)</div>
+                    <div class="nsw-accordion__content">
+                      <p>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-1-default">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.\x3C/p>\x3Cp>This grant scheme only applies to buying or building a new home.\x3C/p>\x3Cp>You can make a claim if:\x3C/p>\x3Cul>\x3Cli>your home is newly constructed and has a total value of less than $600,000\x3C/li>\x3Cli>the land and the dwelling you intend to build has a combined value of less than $750,000.\x3C/li>\x3C/ul>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">HomeBuilder program\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:\x3C/p>\x3Cul>\x3Cli>sign the contract between 4 June 2020 and 31 December 2020\x3C/li>\x3Cli>commence within 3 months of the contract date.\x3C/li>\x3C/ul>\x3Cp>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-1-default">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.\x3C/p>\x3Cp>This grant scheme only applies to buying or building a new home.\x3C/p>\x3Cp>You can make a claim if:\x3C/p>\x3Cul>\x3Cli>your home is newly constructed and has a total value of less than $600,000\x3C/li>\x3Cli>the land and the dwelling you intend to build has a combined value of less than $750,000.\x3C/li>\x3C/ul>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">HomeBuilder program\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:\x3C/p>\x3Cul>\x3Cli>sign the contract between 4 June 2020 and 31 December 2020\x3C/li>\x3Cli>commence within 3 months of the contract date.\x3C/li>\x3C/ul>\x3Cp>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <h3>Simple accordion</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                  <div class="nsw-accordion js-accordion" id="accordion-2-default">
+                    <div class="nsw-accordion__title nsw-accordion__open">Sprint cadence or workflow</div>
+                    <div class="nsw-accordion__content">
+                      <p>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.</p><p>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.</p><p>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.</p>
+                    </div>
+                    <div class="nsw-accordion__title">Simplifying complexity</div>
+                    <div class="nsw-accordion__content">
+                      <p>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. </p><p>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.</p><p>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.</p><p>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.</p>
+                    </div>
+                    <div class="nsw-accordion__title">Working with subject matter experts</div>
+                    <div class="nsw-accordion__content">
+                      <p>Share your way of working with your subject matter experts – in person if possible. </p><p>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-2-default">\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">Sprint cadence or workflow\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.\x3C/p>\x3Cp>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.\x3C/p>\x3Cp>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Simplifying complexity\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. \x3C/p>\x3Cp>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.\x3C/p>\x3Cp>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.\x3C/p>\x3Cp>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Working with subject matter experts\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Share your way of working with your subject matter experts – in person if possible. \x3C/p>\x3Cp>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-2-default">\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">Sprint cadence or workflow\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.\x3C/p>\x3Cp>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.\x3C/p>\x3Cp>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Simplifying complexity\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. \x3C/p>\x3Cp>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.\x3C/p>\x3Cp>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.\x3C/p>\x3Cp>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Working with subject matter experts\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Share your way of working with your subject matter experts – in person if possible. \x3C/p>\x3Cp>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-light">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+              <h2>Details variation (CSS-core)</h2>
+            
+              <h3>Regular</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                    <div class="nsw-accordion--details js-accordion-details" id="accordion-4-brand-light">
+                      <details class="nsw-accordion__item" open id="a1f9b3c2d7e4-brand-light">
+                        <summary class="nsw-accordion__title">
+                          Integrating content into agile workflows
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="a1f9b3c2d7e4-brand-light-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Build content into the sprint from day one. Treat words as part of the product, not an afterthought. Add content tasks to the backlog and review them in stand ups alongside design and development.</p><p>Collaborate with product owners to define a clear Definition of Done for content. Encourage early reviews of copy within design critiques so language decisions move at the same pace as the interface.</p><ul><li>Join daily stand ups and retrospectives to stay aligned</li><li>Include content tickets in sprint demos</li><li>Track feedback and updates using the same agile tools as your team</li></ul>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="b2d6e8f1a9c3-brand-light">
+                        <summary class="nsw-accordion__title">
+                          Designing simple paths through complex tasks
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="b2d6e8f1a9c3-brand-light-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Start by naming the single outcome the user needs to achieve. Remove anything that doesn’t help them get there.</p><p>Structure the page like a conversation: set expectations up front, group related steps, and explain why you’re asking for information.</p><ul><li>Lead with clear, task‑focused headings</li><li>Break long processes into confident, named steps</li><li>Use examples only where users typically hesitate</li></ul>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="c3e7a1b9d5f8-brand-light">
+                        <summary class="nsw-accordion__title">
+                          Partnering with subject matter experts
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="c3e7a1b9d5f8-brand-light-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Make it easy for SMEs to help. Share a short agenda and a live doc. Ask them to walk a realistic scenario instead of describing the system.</p><p>Capture source links and who approved wording so changes are auditable. Follow up with a redline or prototype to make feedback fast.</p><ul><li>Record facts with dates and owners</li><li>Translate jargon into plain language</li><li>Agree on the exact words users will see</li></ul>
+                          </div>
+                        </div>
+                      </details>
+                    </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-4-brand-light">\n  \x3Cdetails class="nsw-accordion__item" open id="a1f9b3c2d7e4-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Integrating content into agile workflows\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="a1f9b3c2d7e4-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Build content into the sprint from day one. Treat words as part of the product, not an afterthought. Add content tasks to the backlog and review them in stand ups alongside design and development.\x3C/p>\x3Cp>Collaborate with product owners to define a clear Definition of Done for content. Encourage early reviews of copy within design critiques so language decisions move at the same pace as the interface.\x3C/p>\x3Cul>\x3Cli>Join daily stand ups and retrospectives to stay aligned\x3C/li>\x3Cli>Include content tickets in sprint demos\x3C/li>\x3Cli>Track feedback and updates using the same agile tools as your team\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="b2d6e8f1a9c3-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Designing simple paths through complex tasks\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="b2d6e8f1a9c3-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Start by naming the single outcome the user needs to achieve. Remove anything that doesn’t help them get there.\x3C/p>\x3Cp>Structure the page like a conversation: set expectations up front, group related steps, and explain why you’re asking for information.\x3C/p>\x3Cul>\x3Cli>Lead with clear, task‑focused headings\x3C/li>\x3Cli>Break long processes into confident, named steps\x3C/li>\x3Cli>Use examples only where users typically hesitate\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="c3e7a1b9d5f8-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Partnering with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="c3e7a1b9d5f8-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Make it easy for SMEs to help. Share a short agenda and a live doc. Ask them to walk a realistic scenario instead of describing the system.\x3C/p>\x3Cp>Capture source links and who approved wording so changes are auditable. Follow up with a redline or prototype to make feedback fast.\x3C/p>\x3Cul>\x3Cli>Record facts with dates and owners\x3C/li>\x3Cli>Translate jargon into plain language\x3C/li>\x3Cli>Agree on the exact words users will see\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-4-brand-light">\n  \x3Cdetails class="nsw-accordion__item" open id="a1f9b3c2d7e4-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Integrating content into agile workflows\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="a1f9b3c2d7e4-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Build content into the sprint from day one. Treat words as part of the product, not an afterthought. Add content tasks to the backlog and review them in stand ups alongside design and development.\x3C/p>\x3Cp>Collaborate with product owners to define a clear Definition of Done for content. Encourage early reviews of copy within design critiques so language decisions move at the same pace as the interface.\x3C/p>\x3Cul>\x3Cli>Join daily stand ups and retrospectives to stay aligned\x3C/li>\x3Cli>Include content tickets in sprint demos\x3C/li>\x3Cli>Track feedback and updates using the same agile tools as your team\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="b2d6e8f1a9c3-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Designing simple paths through complex tasks\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="b2d6e8f1a9c3-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Start by naming the single outcome the user needs to achieve. Remove anything that doesn’t help them get there.\x3C/p>\x3Cp>Structure the page like a conversation: set expectations up front, group related steps, and explain why you’re asking for information.\x3C/p>\x3Cul>\x3Cli>Lead with clear, task‑focused headings\x3C/li>\x3Cli>Break long processes into confident, named steps\x3C/li>\x3Cli>Use examples only where users typically hesitate\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="c3e7a1b9d5f8-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Partnering with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="c3e7a1b9d5f8-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Make it easy for SMEs to help. Share a short agenda and a live doc. Ask them to walk a realistic scenario instead of describing the system.\x3C/p>\x3Cp>Capture source links and who approved wording so changes are auditable. Follow up with a redline or prototype to make feedback fast.\x3C/p>\x3Cul>\x3Cli>Record facts with dates and owners\x3C/li>\x3Cli>Translate jargon into plain language\x3C/li>\x3Cli>Agree on the exact words users will see\x3C/li>\x3C/ul>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <h3>Single item (no wrapper)</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                    <details class="nsw-accordion__item js-accordion-details" open id="13fbfoojb1j-brand-light">
+                      <summary class="nsw-accordion__title">
+                        Sprint cadence or workflow
+                      </summary>
+                      <div class="nsw-accordion__content-wrap" id="13fbfoojb1j-brand-light-panel">
+                        <div class="nsw-accordion__content">
+                          <p>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.</p><p>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.</p> 
+                        </div>
+                      </div>
+                    </details>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdetails class="nsw-accordion__item js-accordion-details" open id="13fbfoojb1j-brand-light">\n  \x3Csummary class="nsw-accordion__title">\n    Sprint cadence or workflow\n  \x3C/summary>\n  \x3Cdiv class="nsw-accordion__content-wrap" id="13fbfoojb1j-brand-light-panel">\n    \x3Cdiv class="nsw-accordion__content">\n      \x3Cp>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.\x3C/p>\x3Cp>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.\x3C/p> \n    \x3C/div>\n  \x3C/div>\n\x3C/details>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdetails class="nsw-accordion__item js-accordion-details" open id="13fbfoojb1j-brand-light">\n  \x3Csummary class="nsw-accordion__title">\n    Sprint cadence or workflow\n  \x3C/summary>\n  \x3Cdiv class="nsw-accordion__content-wrap" id="13fbfoojb1j-brand-light-panel">\n    \x3Cdiv class="nsw-accordion__content">\n      \x3Cp>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.\x3C/p>\x3Cp>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.\x3C/p> \n    \x3C/div>\n  \x3C/div>\n\x3C/details>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <h3>Toggle controls (progressively enhanced)</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                    <div class="nsw-accordion--details js-accordion-details" id="accordion-5-brand-light">
+                      <div class="nsw-accordion__toggle">
+                        <button type="button" aria-label="Expand all sections">Expand all</button>
+                        <button type="button" aria-label="Collapse all sections">Collapse all</button>
+                      </div>
+                      <details class="nsw-accordion__item" id="d1e8a3b9f4c7-brand-light">
+                        <summary class="nsw-accordion__title">
+                          Embedding content design in agile delivery
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="d1e8a3b9f4c7-brand-light-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Bring content into every stage of the sprint, not just the end. Treat it like any other design asset: plan it, review it, and test it early.</p><p>When copy and interface evolve together, teams avoid last‑minute rewrites and mismatched intent.</p>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" open id="b3a2f7e6d9c1-brand-light">
+                        <summary class="nsw-accordion__title">
+                          Making complex information easy to follow
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="b3a2f7e6d9c1-brand-light-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Help users reach their goal quickly. Use strong verbs and avoid multi‑step sentences that hide the action.</p><ul><li>Cut instructions down to what matters</li><li>Show one decision at a time</li><li>Keep headings short and concrete</li></ul><p>Sometimes a simple label swap or reordered field makes the biggest difference.</p>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="e5c4b8d2a9f6-brand-light">
+                        <summary class="nsw-accordion__title">
+                          Collaborating with subject matter experts
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="e5c4b8d2a9f6-brand-light-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Ask SMEs to explain how people actually use a service, not just how it works on paper. Listen for pain points or unclear language that can inform your content choices.</p><p>Keep notes visible to everyone so edits don’t get lost. A few short comments are better than one long document review.</p><p>Follow up with a quick playback—what you heard, what will change, and what stays the same.</p>
+                          </div>
+                        </div>
+                      </details>
+                    </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-5-brand-light">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdetails class="nsw-accordion__item" id="d1e8a3b9f4c7-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Embedding content design in agile delivery\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="d1e8a3b9f4c7-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Bring content into every stage of the sprint, not just the end. Treat it like any other design asset: plan it, review it, and test it early.\x3C/p>\x3Cp>When copy and interface evolve together, teams avoid last‑minute rewrites and mismatched intent.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" open id="b3a2f7e6d9c1-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Making complex information easy to follow\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="b3a2f7e6d9c1-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Help users reach their goal quickly. Use strong verbs and avoid multi‑step sentences that hide the action.\x3C/p>\x3Cul>\x3Cli>Cut instructions down to what matters\x3C/li>\x3Cli>Show one decision at a time\x3C/li>\x3Cli>Keep headings short and concrete\x3C/li>\x3C/ul>\x3Cp>Sometimes a simple label swap or reordered field makes the biggest difference.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="e5c4b8d2a9f6-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Collaborating with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="e5c4b8d2a9f6-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Ask SMEs to explain how people actually use a service, not just how it works on paper. Listen for pain points or unclear language that can inform your content choices.\x3C/p>\x3Cp>Keep notes visible to everyone so edits don’t get lost. A few short comments are better than one long document review.\x3C/p>\x3Cp>Follow up with a quick playback—what you heard, what will change, and what stays the same.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-5-brand-light">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdetails class="nsw-accordion__item" id="d1e8a3b9f4c7-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Embedding content design in agile delivery\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="d1e8a3b9f4c7-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Bring content into every stage of the sprint, not just the end. Treat it like any other design asset: plan it, review it, and test it early.\x3C/p>\x3Cp>When copy and interface evolve together, teams avoid last‑minute rewrites and mismatched intent.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" open id="b3a2f7e6d9c1-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Making complex information easy to follow\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="b3a2f7e6d9c1-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Help users reach their goal quickly. Use strong verbs and avoid multi‑step sentences that hide the action.\x3C/p>\x3Cul>\x3Cli>Cut instructions down to what matters\x3C/li>\x3Cli>Show one decision at a time\x3C/li>\x3Cli>Keep headings short and concrete\x3C/li>\x3C/ul>\x3Cp>Sometimes a simple label swap or reordered field makes the biggest difference.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="e5c4b8d2a9f6-brand-light">\n    \x3Csummary class="nsw-accordion__title">\n      Collaborating with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="e5c4b8d2a9f6-brand-light-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Ask SMEs to explain how people actually use a service, not just how it works on paper. Listen for pain points or unclear language that can inform your content choices.\x3C/p>\x3Cp>Keep notes visible to everyone so edits don’t get lost. A few short comments are better than one long document review.\x3C/p>\x3Cp>Follow up with a quick playback—what you heard, what will change, and what stays the same.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <hr class="nsw-m-top-lg"/>
+            
+              <h2>Legacy variation (JS-core dependent)</h2>
+            
+              <h3>Accordion with expand/collapse all</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                  <div class="nsw-accordion js-accordion" id="accordion-1-brand-light">
+                    <div class="nsw-accordion__toggle">
+                      <button type="button" aria-label="Expand all sections">Expand all</button>
+                      <button type="button" aria-label="Collapse all sections">Collapse all</button>
+                    </div>
+                    <div class="nsw-accordion__title nsw-accordion__open">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)</div>
+                    <div class="nsw-accordion__content">
+                      <p>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.</p><p>This grant scheme only applies to buying or building a new home.</p><p>You can make a claim if:</p><ul><li>your home is newly constructed and has a total value of less than $600,000</li><li>the land and the dwelling you intend to build has a combined value of less than $750,000.</li></ul>
+                    </div>
+                    <div class="nsw-accordion__title">HomeBuilder program</div>
+                    <div class="nsw-accordion__content">
+                      <p>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:</p><ul><li>sign the contract between 4 June 2020 and 31 December 2020</li><li>commence within 3 months of the contract date.</li></ul><p>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.</p>
+                    </div>
+                    <div class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)</div>
+                    <div class="nsw-accordion__content">
+                      <p>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-1-brand-light">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.\x3C/p>\x3Cp>This grant scheme only applies to buying or building a new home.\x3C/p>\x3Cp>You can make a claim if:\x3C/p>\x3Cul>\x3Cli>your home is newly constructed and has a total value of less than $600,000\x3C/li>\x3Cli>the land and the dwelling you intend to build has a combined value of less than $750,000.\x3C/li>\x3C/ul>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">HomeBuilder program\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:\x3C/p>\x3Cul>\x3Cli>sign the contract between 4 June 2020 and 31 December 2020\x3C/li>\x3Cli>commence within 3 months of the contract date.\x3C/li>\x3C/ul>\x3Cp>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-1-brand-light">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.\x3C/p>\x3Cp>This grant scheme only applies to buying or building a new home.\x3C/p>\x3Cp>You can make a claim if:\x3C/p>\x3Cul>\x3Cli>your home is newly constructed and has a total value of less than $600,000\x3C/li>\x3Cli>the land and the dwelling you intend to build has a combined value of less than $750,000.\x3C/li>\x3C/ul>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">HomeBuilder program\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:\x3C/p>\x3Cul>\x3Cli>sign the contract between 4 June 2020 and 31 December 2020\x3C/li>\x3Cli>commence within 3 months of the contract date.\x3C/li>\x3C/ul>\x3Cp>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <h3>Simple accordion</h3>
+              <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                  <div class="nsw-accordion js-accordion" id="accordion-2-brand-light">
+                    <div class="nsw-accordion__title nsw-accordion__open">Sprint cadence or workflow</div>
+                    <div class="nsw-accordion__content">
+                      <p>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.</p><p>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.</p><p>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.</p>
+                    </div>
+                    <div class="nsw-accordion__title">Simplifying complexity</div>
+                    <div class="nsw-accordion__content">
+                      <p>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. </p><p>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.</p><p>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.</p><p>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.</p>
+                    </div>
+                    <div class="nsw-accordion__title">Working with subject matter experts</div>
+                    <div class="nsw-accordion__content">
+                      <p>Share your way of working with your subject matter experts – in person if possible. </p><p>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-2-brand-light">\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">Sprint cadence or workflow\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.\x3C/p>\x3Cp>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.\x3C/p>\x3Cp>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Simplifying complexity\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. \x3C/p>\x3Cp>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.\x3C/p>\x3Cp>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.\x3C/p>\x3Cp>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Working with subject matter experts\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Share your way of working with your subject matter experts – in person if possible. \x3C/p>\x3Cp>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-2-brand-light">\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">Sprint cadence or workflow\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.\x3C/p>\x3Cp>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.\x3C/p>\x3Cp>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Simplifying complexity\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. \x3C/p>\x3Cp>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.\x3C/p>\x3Cp>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.\x3C/p>\x3Cp>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Working with subject matter experts\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Share your way of working with your subject matter experts – in person if possible. \x3C/p>\x3Cp>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-dark nsw-section--invert">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+              <h2>Details variation (CSS-core)</h2>
+            
+              <h3>Regular</h3>
+              <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                    <div class="nsw-accordion--details js-accordion-details" id="accordion-6-inverted">
+                      <details class="nsw-accordion__item" open id="a7c3d9e2f5b8-inverted">
+                        <summary class="nsw-accordion__title">
+                          Building rhythm in agile sprints
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="a7c3d9e2f5b8-inverted-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Plan content into each sprint so words evolve alongside design and development. Treat every ceremony—planning, review, retro—as a place to check content quality and intent.</p><ul><li>Add content tasks to sprint boards</li><li>Review copy during design critiques</li><li>Demo final text in showcases</li></ul><p>Keeping language visible in these moments prevents rushed edits at release time.</p>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="c9b4e6a1d8f2-inverted">
+                        <summary class="nsw-accordion__title">
+                          Guiding users through complex flows
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="c9b4e6a1d8f2-inverted-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Design with empathy for the reader. Show progress and group related steps logically so users never feel lost.</p><p>Explain actions briefly and remove obstacles. Use natural sequencing to create calm, predictable experiences.</p>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="f3a8b7d4e9c5-inverted">
+                        <summary class="nsw-accordion__title">
+                          Working alongside subject experts
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="f3a8b7d4e9c5-inverted-panel">
+                          <div class="nsw-accordion__content">
+                            <p>SMEs bring the deep knowledge—your role is to shape it into something clear and helpful.</p><ul><li>Prepare focused questions before meetings</li><li>Write collaboratively in a shared doc</li><li>Follow up with a short summary of what was agreed</li></ul><p>Consistency builds trust and keeps content accurate over time.</p>
+                          </div>
+                        </div>
+                      </details>
+                    </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-6-inverted">\n  \x3Cdetails class="nsw-accordion__item" open id="a7c3d9e2f5b8-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Building rhythm in agile sprints\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="a7c3d9e2f5b8-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Plan content into each sprint so words evolve alongside design and development. Treat every ceremony—planning, review, retro—as a place to check content quality and intent.\x3C/p>\x3Cul>\x3Cli>Add content tasks to sprint boards\x3C/li>\x3Cli>Review copy during design critiques\x3C/li>\x3Cli>Demo final text in showcases\x3C/li>\x3C/ul>\x3Cp>Keeping language visible in these moments prevents rushed edits at release time.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="c9b4e6a1d8f2-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Guiding users through complex flows\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="c9b4e6a1d8f2-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Design with empathy for the reader. Show progress and group related steps logically so users never feel lost.\x3C/p>\x3Cp>Explain actions briefly and remove obstacles. Use natural sequencing to create calm, predictable experiences.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="f3a8b7d4e9c5-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Working alongside subject experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="f3a8b7d4e9c5-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>SMEs bring the deep knowledge—your role is to shape it into something clear and helpful.\x3C/p>\x3Cul>\x3Cli>Prepare focused questions before meetings\x3C/li>\x3Cli>Write collaboratively in a shared doc\x3C/li>\x3Cli>Follow up with a short summary of what was agreed\x3C/li>\x3C/ul>\x3Cp>Consistency builds trust and keeps content accurate over time.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-6-inverted">\n  \x3Cdetails class="nsw-accordion__item" open id="a7c3d9e2f5b8-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Building rhythm in agile sprints\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="a7c3d9e2f5b8-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Plan content into each sprint so words evolve alongside design and development. Treat every ceremony—planning, review, retro—as a place to check content quality and intent.\x3C/p>\x3Cul>\x3Cli>Add content tasks to sprint boards\x3C/li>\x3Cli>Review copy during design critiques\x3C/li>\x3Cli>Demo final text in showcases\x3C/li>\x3C/ul>\x3Cp>Keeping language visible in these moments prevents rushed edits at release time.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="c9b4e6a1d8f2-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Guiding users through complex flows\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="c9b4e6a1d8f2-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Design with empathy for the reader. Show progress and group related steps logically so users never feel lost.\x3C/p>\x3Cp>Explain actions briefly and remove obstacles. Use natural sequencing to create calm, predictable experiences.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="f3a8b7d4e9c5-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Working alongside subject experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="f3a8b7d4e9c5-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>SMEs bring the deep knowledge—your role is to shape it into something clear and helpful.\x3C/p>\x3Cul>\x3Cli>Prepare focused questions before meetings\x3C/li>\x3Cli>Write collaboratively in a shared doc\x3C/li>\x3Cli>Follow up with a short summary of what was agreed\x3C/li>\x3C/ul>\x3Cp>Consistency builds trust and keeps content accurate over time.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <h3>Single item (no wrapper)</h3>
+              <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                    <details class="nsw-accordion__item js-accordion-details" open id="13fbbarjb1j-inverted">
+                      <summary class="nsw-accordion__title">
+                        Sprint cadence or workflow
+                      </summary>
+                      <div class="nsw-accordion__content-wrap" id="13fbbarjb1j-inverted-panel">
+                        <div class="nsw-accordion__content">
+                          <p>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.</p><p>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.</p> 
+                        </div>
+                      </div>
+                    </details>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdetails class="nsw-accordion__item js-accordion-details" open id="13fbbarjb1j-inverted">\n  \x3Csummary class="nsw-accordion__title">\n    Sprint cadence or workflow\n  \x3C/summary>\n  \x3Cdiv class="nsw-accordion__content-wrap" id="13fbbarjb1j-inverted-panel">\n    \x3Cdiv class="nsw-accordion__content">\n      \x3Cp>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.\x3C/p>\x3Cp>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.\x3C/p> \n    \x3C/div>\n  \x3C/div>\n\x3C/details>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdetails class="nsw-accordion__item js-accordion-details" open id="13fbbarjb1j-inverted">\n  \x3Csummary class="nsw-accordion__title">\n    Sprint cadence or workflow\n  \x3C/summary>\n  \x3Cdiv class="nsw-accordion__content-wrap" id="13fbbarjb1j-inverted-panel">\n    \x3Cdiv class="nsw-accordion__content">\n      \x3Cp>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.\x3C/p>\x3Cp>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.\x3C/p> \n    \x3C/div>\n  \x3C/div>\n\x3C/details>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <h3>Toggle controls (progressively enhanced)</h3>
+              <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                    <div class="nsw-accordion--details js-accordion-details" id="accordion-7-inverted">
+                      <div class="nsw-accordion__toggle">
+                        <button type="button" aria-label="Expand all sections">Expand all</button>
+                        <button type="button" aria-label="Collapse all sections">Collapse all</button>
+                      </div>
+                      <details class="nsw-accordion__item" open id="13fbjb1j-inverted">
+                        <summary class="nsw-accordion__title">
+                          Sprint cadence or workflow
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="13fbjb1j-inverted-panel">
+                          <div class="nsw-accordion__content">
+                            <p>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.</p><p>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.</p> 
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="g49nb8n92e-inverted">
+                        <summary class="nsw-accordion__title">
+                          Simplifying complexity
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="g49nb8n92e-inverted-panel">
+                          <div class="nsw-accordion__content">
+                            <p>When something feels complicated, start by reframing it from the user’s point of view. Ask what they actually need to do, and make that your north star.</p><ul><li>Define a clear primary action</li><li>Group related steps together</li><li>Explain why, not just how</li></ul><p>Sometimes simplification isn’t about fewer words, but clearer structure.</p>
+                          </div>
+                        </div>
+                      </details>
+                      <details class="nsw-accordion__item" id="v2n92n478-inverted">
+                        <summary class="nsw-accordion__title">
+                          Working with subject matter experts
+                        </summary>
+                        <div class="nsw-accordion__content-wrap" id="v2n92n478-inverted-panel">
+                          <div class="nsw-accordion__content">
+                            <p>SMEs are key partners, not gatekeepers. Meet with purpose—send questions beforehand and focus on decisions, not descriptions.</p><p>Keep a shared doc open during sessions to capture facts, approvals, and wording in real time. It saves endless back‑and‑forth later.</p><p>End each meeting with a summary of what was agreed and what’s next. This builds trust and keeps the process transparent.</p>
+                          </div>
+                        </div>
+                      </details>
+                    </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-7-inverted">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdetails class="nsw-accordion__item" open id="13fbjb1j-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Sprint cadence or workflow\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="13fbjb1j-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.\x3C/p>\x3Cp>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.\x3C/p> \n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="g49nb8n92e-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Simplifying complexity\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="g49nb8n92e-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>When something feels complicated, start by reframing it from the user’s point of view. Ask what they actually need to do, and make that your north star.\x3C/p>\x3Cul>\x3Cli>Define a clear primary action\x3C/li>\x3Cli>Group related steps together\x3C/li>\x3Cli>Explain why, not just how\x3C/li>\x3C/ul>\x3Cp>Sometimes simplification isn’t about fewer words, but clearer structure.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="v2n92n478-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Working with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="v2n92n478-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>SMEs are key partners, not gatekeepers. Meet with purpose—send questions beforehand and focus on decisions, not descriptions.\x3C/p>\x3Cp>Keep a shared doc open during sessions to capture facts, approvals, and wording in real time. It saves endless back‑and‑forth later.\x3C/p>\x3Cp>End each meeting with a summary of what was agreed and what’s next. This builds trust and keeps the process transparent.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion--details js-accordion-details" id="accordion-7-inverted">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdetails class="nsw-accordion__item" open id="13fbjb1j-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Sprint cadence or workflow\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="13fbjb1j-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>Join the team’s rhythm early. Be part of stand ups, planning sessions, and retros to spot content needs before they become blockers. Work closely with design and engineering to align intent and tone.\x3C/p>\x3Cp>Keep a living content backlog and track it with the same tools your team uses for features. Make small, iterative improvements instead of waiting for a rewrite cycle.\x3C/p> \n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="g49nb8n92e-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Simplifying complexity\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="g49nb8n92e-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>When something feels complicated, start by reframing it from the user’s point of view. Ask what they actually need to do, and make that your north star.\x3C/p>\x3Cul>\x3Cli>Define a clear primary action\x3C/li>\x3Cli>Group related steps together\x3C/li>\x3Cli>Explain why, not just how\x3C/li>\x3C/ul>\x3Cp>Sometimes simplification isn’t about fewer words, but clearer structure.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n  \x3Cdetails class="nsw-accordion__item" id="v2n92n478-inverted">\n    \x3Csummary class="nsw-accordion__title">\n      Working with subject matter experts\n    \x3C/summary>\n    \x3Cdiv class="nsw-accordion__content-wrap" id="v2n92n478-inverted-panel">\n      \x3Cdiv class="nsw-accordion__content">\n        \x3Cp>SMEs are key partners, not gatekeepers. Meet with purpose—send questions beforehand and focus on decisions, not descriptions.\x3C/p>\x3Cp>Keep a shared doc open during sessions to capture facts, approvals, and wording in real time. It saves endless back‑and‑forth later.\x3C/p>\x3Cp>End each meeting with a summary of what was agreed and what’s next. This builds trust and keeps the process transparent.\x3C/p>\n      \x3C/div>\n    \x3C/div>\n  \x3C/details>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <hr class="nsw-m-top-lg"/>
+            
+              <h2>Legacy variation (JS-core dependent)</h2>
+            
+              <h3>Accordion with expand/collapse all</h3>
+              <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                  <div class="nsw-accordion js-accordion" id="accordion-1-inverted">
+                    <div class="nsw-accordion__toggle">
+                      <button type="button" aria-label="Expand all sections">Expand all</button>
+                      <button type="button" aria-label="Collapse all sections">Collapse all</button>
+                    </div>
+                    <div class="nsw-accordion__title nsw-accordion__open">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)</div>
+                    <div class="nsw-accordion__content">
+                      <p>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.</p><p>This grant scheme only applies to buying or building a new home.</p><p>You can make a claim if:</p><ul><li>your home is newly constructed and has a total value of less than $600,000</li><li>the land and the dwelling you intend to build has a combined value of less than $750,000.</li></ul>
+                    </div>
+                    <div class="nsw-accordion__title">HomeBuilder program</div>
+                    <div class="nsw-accordion__content">
+                      <p>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:</p><ul><li>sign the contract between 4 June 2020 and 31 December 2020</li><li>commence within 3 months of the contract date.</li></ul><p>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.</p>
+                    </div>
+                    <div class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)</div>
+                    <div class="nsw-accordion__content">
+                      <p>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-1-inverted">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.\x3C/p>\x3Cp>This grant scheme only applies to buying or building a new home.\x3C/p>\x3Cp>You can make a claim if:\x3C/p>\x3Cul>\x3Cli>your home is newly constructed and has a total value of less than $600,000\x3C/li>\x3Cli>the land and the dwelling you intend to build has a combined value of less than $750,000.\x3C/li>\x3C/ul>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">HomeBuilder program\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:\x3C/p>\x3Cul>\x3Cli>sign the contract between 4 June 2020 and 31 December 2020\x3C/li>\x3Cli>commence within 3 months of the contract date.\x3C/li>\x3C/ul>\x3Cp>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-1-inverted">\n  \x3Cdiv class="nsw-accordion__toggle">\n    \x3Cbutton type="button" aria-label="Expand all sections">Expand all\x3C/button>\n    \x3Cbutton type="button" aria-label="Collapse all sections">Collapse all\x3C/button>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.\x3C/p>\x3Cp>This grant scheme only applies to buying or building a new home.\x3C/p>\x3Cp>You can make a claim if:\x3C/p>\x3Cul>\x3Cli>your home is newly constructed and has a total value of less than $600,000\x3C/li>\x3Cli>the land and the dwelling you intend to build has a combined value of less than $750,000.\x3C/li>\x3C/ul>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">HomeBuilder program\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:\x3C/p>\x3Cul>\x3Cli>sign the contract between 4 June 2020 and 31 December 2020\x3C/li>\x3Cli>commence within 3 months of the contract date.\x3C/li>\x3C/ul>\x3Cp>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            
+              <h3>Simple accordion</h3>
+              <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                  <div class="nsw-accordion js-accordion" id="accordion-2-inverted">
+                    <div class="nsw-accordion__title nsw-accordion__open">Sprint cadence or workflow</div>
+                    <div class="nsw-accordion__content">
+                      <p>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.</p><p>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.</p><p>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.</p>
+                    </div>
+                    <div class="nsw-accordion__title">Simplifying complexity</div>
+                    <div class="nsw-accordion__content">
+                      <p>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. </p><p>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.</p><p>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.</p><p>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.</p>
+                    </div>
+                    <div class="nsw-accordion__title">Working with subject matter experts</div>
+                    <div class="nsw-accordion__content">
+                      <p>Share your way of working with your subject matter experts – in person if possible. </p><p>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-2-inverted">\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">Sprint cadence or workflow\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.\x3C/p>\x3Cp>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.\x3C/p>\x3Cp>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Simplifying complexity\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. \x3C/p>\x3Cp>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.\x3C/p>\x3Cp>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.\x3C/p>\x3Cp>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Working with subject matter experts\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Share your way of working with your subject matter experts – in person if possible. \x3C/p>\x3Cp>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-accordion js-accordion" id="accordion-2-inverted">\n  \x3Cdiv class="nsw-accordion__title nsw-accordion__open">Sprint cadence or workflow\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.\x3C/p>\x3Cp>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.\x3C/p>\x3Cp>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Simplifying complexity\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. \x3C/p>\x3Cp>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.\x3C/p>\x3Cp>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.\x3C/p>\x3Cp>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.\x3C/p>\n  \x3C/div>\n  \x3Cdiv class="nsw-accordion__title">Working with subject matter experts\x3C/div>\n  \x3Cdiv class="nsw-accordion__content">\n    \x3Cp>Share your way of working with your subject matter experts – in person if possible. \x3C/p>\x3Cp>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.\x3C/p>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://designsystem.nsw.gov.au/docs/js/docs.js"></script>
+
+  <button type="button" class="nsw-button nsw-button--dark nsw-button--flex nsw-back-to-top js-back-to-top">
+  </button>  <script src="https://designsystem.nsw.gov.au/js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+  </script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

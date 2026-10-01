@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head><script async data-category="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-49T9M12F86"></script>
+<script data-category="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49T9M12F86');
+</script>
+  <script data-category="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2NKBBJZ');</script>
+  
+  <title>File upload: Demo &amp; code - NSW Digital Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.nsw.gov.au/nsw-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="https://designsystem.nsw.gov.au/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="https://designsystem.nsw.gov.au/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="https://designsystem.nsw.gov.au/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://designsystem.nsw.gov.au/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="NSW Design System" />
+  <link rel="manifest" href="https://designsystem.nsw.gov.au/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://designsystem.nsw.gov.au/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for NSW Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="https://designsystem.nsw.gov.au/cookie-consent-config.js"></script>
+</head>
+
+<body class="nsw-docs-demo">
+
+
+<header class="nsw-header nsw-color-swatches-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__inner nsw-color-swatches-header__inner">
+      <a class="nsw-link nsw-link--icon nsw-color-swatches-header__back" href="https://designsystem.nsw.gov.au/components/file-upload/index.html">
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">west</span>
+        <span>Back</span>
+      </a>
+      <div class="nsw-color-swatches js-color-swatches">
+        <legend class="nsw-color-swatches__legend" aria-live="polite" aria-atomic="true"><span class="nsw-color-swatches__color js-color-swatches__color">Blue 01</span></legend>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="nsw-section">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h1>File upload: Demo &amp; code</h1>
+            <h3>Single file</h3>
+            <p>Includes ability to accept only a single file.</p>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="demo-file-upload">Upload drivers license</label>
+                    <span class="nsw-form__helper" id="demo-file-upload-helper-text">Formats accepted: JPG, PNG or PDF <br /> File size must not exceed 350MB</span>
+                    <div class="nsw-file-upload js-file-upload" data-replace-files>
+                        <input id="demo-file-upload" type="file" class="nsw-file-upload__input" name="demo-file-upload" aria-describedby="demo-file-upload-helper-text" accept="image/*,.pdf">
+                        <label for="demo-file-upload" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-file-upload">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-file-upload-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload" data-replace-files>\n        \x3Cinput id="demo-file-upload" type="file" class="nsw-file-upload__input" name="demo-file-upload" aria-describedby="demo-file-upload-helper-text" accept="image/*,.pdf">\n        \x3Clabel for="demo-file-upload" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-file-upload">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-file-upload-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload" data-replace-files>\n        \x3Cinput id="demo-file-upload" type="file" class="nsw-file-upload__input" name="demo-file-upload" aria-describedby="demo-file-upload-helper-text" accept="image/*,.pdf">\n        \x3Clabel for="demo-file-upload" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Error messages</h3>
+            <p>Includes ability to accept multiple files.</p>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="demo-file-upload-error">Upload drivers license</label>
+                    <span class="nsw-form__helper" id="demo-file-upload-error-helper-text">Formats accepted: JPG, PNG or PDF <br /> File size must not exceed 350MB</span>
+                    <span class="nsw-form__helper nsw-form__helper--error" id="demo-file-upload-error-error-text"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>The selected file must be smaller than 350MB</span>
+                    <div class="nsw-file-upload js-file-upload">
+                        <input id="demo-file-upload-error" type="file" class="nsw-file-upload__input" name="demo-file-upload-error" aria-describedby="demo-file-upload-error-helper-text" aria-invalid="true" accept="image/*,.pdf" multiple>
+                        <label for="demo-file-upload-error" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-file-upload-error">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-file-upload-error-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cspan class="nsw-form__helper nsw-form__helper--error" id="demo-file-upload-error-error-text">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>The selected file must be smaller than 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload">\n        \x3Cinput id="demo-file-upload-error" type="file" class="nsw-file-upload__input" name="demo-file-upload-error" aria-describedby="demo-file-upload-error-helper-text" aria-invalid="true" accept="image/*,.pdf" multiple>\n        \x3Clabel for="demo-file-upload-error" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-file-upload-error">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-file-upload-error-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cspan class="nsw-form__helper nsw-form__helper--error" id="demo-file-upload-error-error-text">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>The selected file must be smaller than 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload">\n        \x3Cinput id="demo-file-upload-error" type="file" class="nsw-file-upload__input" name="demo-file-upload-error" aria-describedby="demo-file-upload-error-helper-text" aria-invalid="true" accept="image/*,.pdf" multiple>\n        \x3Clabel for="demo-file-upload-error" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-light">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h3>Single file</h3>
+            <p>Includes ability to accept only a single file.</p>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="demo-light-file-upload">Upload drivers license</label>
+                    <span class="nsw-form__helper" id="demo-light-file-upload-helper-text">Formats accepted: JPG, PNG or PDF <br /> File size must not exceed 350MB</span>
+                    <div class="nsw-file-upload js-file-upload" data-replace-files>
+                        <input id="demo-light-file-upload" type="file" class="nsw-file-upload__input" name="demo-light-file-upload" aria-describedby="demo-light-file-upload-helper-text" accept="image/*,.pdf">
+                        <label for="demo-light-file-upload" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-light-file-upload">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-light-file-upload-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload" data-replace-files>\n        \x3Cinput id="demo-light-file-upload" type="file" class="nsw-file-upload__input" name="demo-light-file-upload" aria-describedby="demo-light-file-upload-helper-text" accept="image/*,.pdf">\n        \x3Clabel for="demo-light-file-upload" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-light-file-upload">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-light-file-upload-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload" data-replace-files>\n        \x3Cinput id="demo-light-file-upload" type="file" class="nsw-file-upload__input" name="demo-light-file-upload" aria-describedby="demo-light-file-upload-helper-text" accept="image/*,.pdf">\n        \x3Clabel for="demo-light-file-upload" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Error messages</h3>
+            <p>Includes ability to accept multiple files.</p>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="demo-light-file-upload-error">Upload drivers license</label>
+                    <span class="nsw-form__helper" id="demo-light-file-upload-error-helper-text">Formats accepted: JPG, PNG or PDF <br /> File size must not exceed 350MB</span>
+                    <span class="nsw-form__helper nsw-form__helper--error" id="demo-light-file-upload-error-error-text"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>The selected file must be smaller than 350MB</span>
+                    <div class="nsw-file-upload js-file-upload">
+                        <input id="demo-light-file-upload-error" type="file" class="nsw-file-upload__input" name="demo-light-file-upload-error" aria-describedby="demo-light-file-upload-error-helper-text" aria-invalid="true" accept="image/*,.pdf" multiple>
+                        <label for="demo-light-file-upload-error" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-light-file-upload-error">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-light-file-upload-error-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cspan class="nsw-form__helper nsw-form__helper--error" id="demo-light-file-upload-error-error-text">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>The selected file must be smaller than 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload">\n        \x3Cinput id="demo-light-file-upload-error" type="file" class="nsw-file-upload__input" name="demo-light-file-upload-error" aria-describedby="demo-light-file-upload-error-helper-text" aria-invalid="true" accept="image/*,.pdf" multiple>\n        \x3Clabel for="demo-light-file-upload-error" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-light-file-upload-error">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-light-file-upload-error-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cspan class="nsw-form__helper nsw-form__helper--error" id="demo-light-file-upload-error-error-text">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>The selected file must be smaller than 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload">\n        \x3Cinput id="demo-light-file-upload-error" type="file" class="nsw-file-upload__input" name="demo-light-file-upload-error" aria-describedby="demo-light-file-upload-error-helper-text" aria-invalid="true" accept="image/*,.pdf" multiple>\n        \x3Clabel for="demo-light-file-upload-error" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-dark nsw-section--invert">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h3>Single file</h3>
+            <p>Includes ability to accept only a single file.</p>
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="demo-dark-file-upload">Upload drivers license</label>
+                    <span class="nsw-form__helper" id="demo-dark-file-upload-helper-text">Formats accepted: JPG, PNG or PDF <br /> File size must not exceed 350MB</span>
+                    <div class="nsw-file-upload js-file-upload" data-replace-files>
+                        <input id="demo-dark-file-upload" type="file" class="nsw-file-upload__input" name="demo-dark-file-upload" aria-describedby="demo-dark-file-upload-helper-text" accept="image/*,.pdf">
+                        <label for="demo-dark-file-upload" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-dark-file-upload">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-dark-file-upload-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload" data-replace-files>\n        \x3Cinput id="demo-dark-file-upload" type="file" class="nsw-file-upload__input" name="demo-dark-file-upload" aria-describedby="demo-dark-file-upload-helper-text" accept="image/*,.pdf">\n        \x3Clabel for="demo-dark-file-upload" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-dark-file-upload">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-dark-file-upload-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload" data-replace-files>\n        \x3Cinput id="demo-dark-file-upload" type="file" class="nsw-file-upload__input" name="demo-dark-file-upload" aria-describedby="demo-dark-file-upload-helper-text" accept="image/*,.pdf">\n        \x3Clabel for="demo-dark-file-upload" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Error messages</h3>
+            <p>Includes ability to accept multiple files.</p>
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="demo-dark-file-upload-error">Upload drivers license</label>
+                    <span class="nsw-form__helper" id="demo-dark-file-upload-error-helper-text">Formats accepted: JPG, PNG or PDF <br /> File size must not exceed 350MB</span>
+                    <span class="nsw-form__helper nsw-form__helper--error" id="demo-dark-file-upload-error-error-text"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>The selected file must be smaller than 350MB</span>
+                    <div class="nsw-file-upload js-file-upload">
+                        <input id="demo-dark-file-upload-error" type="file" class="nsw-file-upload__input" name="demo-dark-file-upload-error" aria-describedby="demo-dark-file-upload-error-helper-text" aria-invalid="true" accept="image/*,.pdf" multiple>
+                        <label for="demo-dark-file-upload-error" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-dark-file-upload-error">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-dark-file-upload-error-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cspan class="nsw-form__helper nsw-form__helper--error" id="demo-dark-file-upload-error-error-text">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>The selected file must be smaller than 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload">\n        \x3Cinput id="demo-dark-file-upload-error" type="file" class="nsw-file-upload__input" name="demo-dark-file-upload-error" aria-describedby="demo-dark-file-upload-error-helper-text" aria-invalid="true" accept="image/*,.pdf" multiple>\n        \x3Clabel for="demo-dark-file-upload-error" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="demo-dark-file-upload-error">Upload drivers license\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="demo-dark-file-upload-error-helper-text">Formats accepted: JPG, PNG or PDF \x3Cbr /> File size must not exceed 350MB\x3C/span>\n    \x3Cspan class="nsw-form__helper nsw-form__helper--error" id="demo-dark-file-upload-error-error-text">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>The selected file must be smaller than 350MB\x3C/span>\n    \x3Cdiv class="nsw-file-upload js-file-upload">\n        \x3Cinput id="demo-dark-file-upload-error" type="file" class="nsw-file-upload__input" name="demo-dark-file-upload-error" aria-describedby="demo-dark-file-upload-error-helper-text" aria-invalid="true" accept="image/*,.pdf" multiple>\n        \x3Clabel for="demo-dark-file-upload-error" class="nsw-file-upload__label nsw-button nsw-button--dark-outline-solid">Select file\x3C/label>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://designsystem.nsw.gov.au/docs/js/docs.js"></script>
+
+  <button type="button" class="nsw-button nsw-button--dark nsw-button--flex nsw-back-to-top js-back-to-top">
+  </button>  <script src="https://designsystem.nsw.gov.au/js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+  </script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

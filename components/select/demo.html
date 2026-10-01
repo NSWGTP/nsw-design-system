@@ -1,0 +1,1404 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head><script async data-category="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-49T9M12F86"></script>
+<script data-category="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49T9M12F86');
+</script>
+  <script data-category="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2NKBBJZ');</script>
+  
+  <title>Select: Demo &amp; code - NSW Digital Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.nsw.gov.au/nsw-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="https://designsystem.nsw.gov.au/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="https://designsystem.nsw.gov.au/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="https://designsystem.nsw.gov.au/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://designsystem.nsw.gov.au/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="NSW Design System" />
+  <link rel="manifest" href="https://designsystem.nsw.gov.au/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://designsystem.nsw.gov.au/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for NSW Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="https://designsystem.nsw.gov.au/cookie-consent-config.js"></script>
+</head>
+
+<body class="nsw-docs-demo">
+
+
+<header class="nsw-header nsw-color-swatches-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__inner nsw-color-swatches-header__inner">
+      <a class="nsw-link nsw-link--icon nsw-color-swatches-header__back" href="https://designsystem.nsw.gov.au/components/select/index.html">
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">west</span>
+        <span>Back</span>
+      </a>
+      <div class="nsw-color-swatches js-color-swatches">
+        <legend class="nsw-color-swatches__legend" aria-live="polite" aria-atomic="true"><span class="nsw-color-swatches__color js-color-swatches__color">Blue 01</span></legend>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="nsw-section">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h1>Select: Demo &amp; code</h1>
+            <h3>Single select</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-regions-1-default">Region</label>
+                      <select class="nsw-form__select" name="select-all-regions-1-default" id="select-all-regions-1-default" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-1-default">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-1-default" id="select-all-regions-1-default" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-1-default">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-1-default" id="select-all-regions-1-default" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Multiple select</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-savings-programs-1-default">Savings programs you would like to claim</label>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-1-default" id="select-all-savings-programs-1-default" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-1-default">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-1-default" id="select-all-savings-programs-1-default" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-1-default">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-1-default" id="select-all-savings-programs-1-default" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Multiple select with many options</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-many-options-1-default">Services you may need</label>
+                    <span class="nsw-form__helper" id="select-many-options-1-default-helper-text">Select all that apply</span>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select services" data-multi-select-text="{n} services selected" data-n-multi-select="2" data-multi-select-max-height="45">
+                      <select name="select-many-options-1-default" id="select-many-options-1-default" aria-describedby="select-many-options-1-default-helper-text" multiple >
+                        <option value="Birth certificate">Birth certificate</option>
+                        <option value="Change of name certificate">Change of name certificate</option>
+                        <option value="Driver licence">Driver licence</option>
+                        <option value="Photo card">Photo card</option>
+                        <option value="Vehicle registration">Vehicle registration</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="Opal card">Opal card</option>
+                        <option value="Public transport concession">Public transport concession</option>
+                        <option value="Seniors card">Seniors card</option>
+                        <option value="Companion card">Companion card</option>
+                        <option value="Carer support">Carer support</option>
+                        <option value="Disability support">Disability support</option>
+                        <option value="Housing assistance">Housing assistance</option>
+                        <option value="Rental bond loan">Rental bond loan</option>
+                        <option value="Energy rebate">Energy rebate</option>
+                        <option value="Water rebate">Water rebate</option>
+                        <option value="Cost of living support">Cost of living support</option>
+                        <option value="Family payments">Family payments</option>
+                        <option value="Child care assistance">Child care assistance</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="First lap voucher">First lap voucher</option>
+                        <option value="Learn to swim support">Learn to swim support</option>
+                        <option value="School travel pass">School travel pass</option>
+                        <option value="TAFE course support">TAFE course support</option>
+                        <option value="Apprenticeship support">Apprenticeship support</option>
+                        <option value="Small business support">Small business support</option>
+                        <option value="Business grants">Business grants</option>
+                        <option value="Disaster recovery support">Disaster recovery support</option>
+                        <option value="Flood assistance">Flood assistance</option>
+                        <option value="Drought assistance">Drought assistance</option>
+                        <option value="Fire safety check">Fire safety check</option>
+                        <option value="Planning certificate">Planning certificate</option>
+                        <option value="Property information">Property information</option>
+                        <option value="Land tax">Land tax</option>
+                        <option value="Payroll tax">Payroll tax</option>
+                        <option value="Fine payment">Fine payment</option>
+                        <option value="Court services">Court services</option>
+                        <option value="Victims support">Victims support</option>
+                        <option value="Community services">Community services</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-many-options-1-default">Services you may need\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-many-options-1-default-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select services" data-multi-select-text="{n} services selected" data-n-multi-select="2" data-multi-select-max-height="45">\n      \x3Cselect name="select-many-options-1-default" id="select-many-options-1-default" aria-describedby="select-many-options-1-default-helper-text" multiple >\n        \x3Coption value="Birth certificate">Birth certificate\x3C/option>\n        \x3Coption value="Change of name certificate">Change of name certificate\x3C/option>\n        \x3Coption value="Driver licence">Driver licence\x3C/option>\n        \x3Coption value="Photo card">Photo card\x3C/option>\n        \x3Coption value="Vehicle registration">Vehicle registration\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="Opal card">Opal card\x3C/option>\n        \x3Coption value="Public transport concession">Public transport concession\x3C/option>\n        \x3Coption value="Seniors card">Seniors card\x3C/option>\n        \x3Coption value="Companion card">Companion card\x3C/option>\n        \x3Coption value="Carer support">Carer support\x3C/option>\n        \x3Coption value="Disability support">Disability support\x3C/option>\n        \x3Coption value="Housing assistance">Housing assistance\x3C/option>\n        \x3Coption value="Rental bond loan">Rental bond loan\x3C/option>\n        \x3Coption value="Energy rebate">Energy rebate\x3C/option>\n        \x3Coption value="Water rebate">Water rebate\x3C/option>\n        \x3Coption value="Cost of living support">Cost of living support\x3C/option>\n        \x3Coption value="Family payments">Family payments\x3C/option>\n        \x3Coption value="Child care assistance">Child care assistance\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="First lap voucher">First lap voucher\x3C/option>\n        \x3Coption value="Learn to swim support">Learn to swim support\x3C/option>\n        \x3Coption value="School travel pass">School travel pass\x3C/option>\n        \x3Coption value="TAFE course support">TAFE course support\x3C/option>\n        \x3Coption value="Apprenticeship support">Apprenticeship support\x3C/option>\n        \x3Coption value="Small business support">Small business support\x3C/option>\n        \x3Coption value="Business grants">Business grants\x3C/option>\n        \x3Coption value="Disaster recovery support">Disaster recovery support\x3C/option>\n        \x3Coption value="Flood assistance">Flood assistance\x3C/option>\n        \x3Coption value="Drought assistance">Drought assistance\x3C/option>\n        \x3Coption value="Fire safety check">Fire safety check\x3C/option>\n        \x3Coption value="Planning certificate">Planning certificate\x3C/option>\n        \x3Coption value="Property information">Property information\x3C/option>\n        \x3Coption value="Land tax">Land tax\x3C/option>\n        \x3Coption value="Payroll tax">Payroll tax\x3C/option>\n        \x3Coption value="Fine payment">Fine payment\x3C/option>\n        \x3Coption value="Court services">Court services\x3C/option>\n        \x3Coption value="Victims support">Victims support\x3C/option>\n        \x3Coption value="Community services">Community services\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-many-options-1-default">Services you may need\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-many-options-1-default-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select services" data-multi-select-text="{n} services selected" data-n-multi-select="2" data-multi-select-max-height="45">\n      \x3Cselect name="select-many-options-1-default" id="select-many-options-1-default" aria-describedby="select-many-options-1-default-helper-text" multiple >\n        \x3Coption value="Birth certificate">Birth certificate\x3C/option>\n        \x3Coption value="Change of name certificate">Change of name certificate\x3C/option>\n        \x3Coption value="Driver licence">Driver licence\x3C/option>\n        \x3Coption value="Photo card">Photo card\x3C/option>\n        \x3Coption value="Vehicle registration">Vehicle registration\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="Opal card">Opal card\x3C/option>\n        \x3Coption value="Public transport concession">Public transport concession\x3C/option>\n        \x3Coption value="Seniors card">Seniors card\x3C/option>\n        \x3Coption value="Companion card">Companion card\x3C/option>\n        \x3Coption value="Carer support">Carer support\x3C/option>\n        \x3Coption value="Disability support">Disability support\x3C/option>\n        \x3Coption value="Housing assistance">Housing assistance\x3C/option>\n        \x3Coption value="Rental bond loan">Rental bond loan\x3C/option>\n        \x3Coption value="Energy rebate">Energy rebate\x3C/option>\n        \x3Coption value="Water rebate">Water rebate\x3C/option>\n        \x3Coption value="Cost of living support">Cost of living support\x3C/option>\n        \x3Coption value="Family payments">Family payments\x3C/option>\n        \x3Coption value="Child care assistance">Child care assistance\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="First lap voucher">First lap voucher\x3C/option>\n        \x3Coption value="Learn to swim support">Learn to swim support\x3C/option>\n        \x3Coption value="School travel pass">School travel pass\x3C/option>\n        \x3Coption value="TAFE course support">TAFE course support\x3C/option>\n        \x3Coption value="Apprenticeship support">Apprenticeship support\x3C/option>\n        \x3Coption value="Small business support">Small business support\x3C/option>\n        \x3Coption value="Business grants">Business grants\x3C/option>\n        \x3Coption value="Disaster recovery support">Disaster recovery support\x3C/option>\n        \x3Coption value="Flood assistance">Flood assistance\x3C/option>\n        \x3Coption value="Drought assistance">Drought assistance\x3C/option>\n        \x3Coption value="Fire safety check">Fire safety check\x3C/option>\n        \x3Coption value="Planning certificate">Planning certificate\x3C/option>\n        \x3Coption value="Property information">Property information\x3C/option>\n        \x3Coption value="Land tax">Land tax\x3C/option>\n        \x3Coption value="Payroll tax">Payroll tax\x3C/option>\n        \x3Coption value="Fine payment">Fine payment\x3C/option>\n        \x3Coption value="Court services">Court services\x3C/option>\n        \x3Coption value="Victims support">Victims support\x3C/option>\n        \x3Coption value="Community services">Community services\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Helper text</h3>
+            
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-regions-2-default">Region</label>
+                    <span class="nsw-form__helper" id="select-all-regions-2-default-helper-text">Your region of residence</span>
+                      <select class="nsw-form__select" name="select-all-regions-2-default" id="select-all-regions-2-default" aria-describedby="select-all-regions-2-default-helper-text" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-2-default">Region\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-regions-2-default-helper-text">Your region of residence\x3C/span>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-2-default" id="select-all-regions-2-default" aria-describedby="select-all-regions-2-default-helper-text" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-2-default">Region\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-regions-2-default-helper-text">Your region of residence\x3C/span>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-2-default" id="select-all-regions-2-default" aria-describedby="select-all-regions-2-default-helper-text" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-savings-programs-2-default">Savings programs you would like to claim</label>
+                    <span class="nsw-form__helper" id="select-all-savings-programs-2-default-helper-text">Select all that apply</span>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-2-default" id="select-all-savings-programs-2-default" aria-describedby="select-all-savings-programs-2-default-helper-text" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-2-default">Savings programs you would like to claim\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-savings-programs-2-default-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-2-default" id="select-all-savings-programs-2-default" aria-describedby="select-all-savings-programs-2-default-helper-text" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-2-default">Savings programs you would like to claim\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-savings-programs-2-default-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-2-default" id="select-all-savings-programs-2-default" aria-describedby="select-all-savings-programs-2-default-helper-text" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Error</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label nsw-form__required" for="select-all-regions-3-default">Region<span class="sr-only"> (required)</span></label>
+                      <select class="nsw-form__select" name="select-all-regions-3-default" id="select-all-regions-3-default" aria-invalid="true" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                    <span id="select-all-regions-3-default-error-text" class="nsw-form__helper nsw-form__helper--error"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select a region of residence</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-regions-3-default">Region\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-3-default" id="select-all-regions-3-default" aria-invalid="true" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-3-default-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select a region of residence\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-regions-3-default">Region\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-3-default" id="select-all-regions-3-default" aria-invalid="true" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-3-default-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select a region of residence\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label nsw-form__required" for="select-all-savings-programs-3-default">Savings programs you would like to claim<span class="sr-only"> (required)</span></label>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-3-default" id="select-all-savings-programs-3-default" aria-invalid="true" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                    <span id="select-all-savings-programs-3-default-error-text" class="nsw-form__helper nsw-form__helper--error"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select the savings programs you would like to claim</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-savings-programs-3-default">Savings programs you would like to claim\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-3-default" id="select-all-savings-programs-3-default" aria-invalid="true" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-3-default-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select the savings programs you would like to claim\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-savings-programs-3-default">Savings programs you would like to claim\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-3-default" id="select-all-savings-programs-3-default" aria-invalid="true" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-3-default-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select the savings programs you would like to claim\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Validation</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-regions-4-default">Region</label>
+                      <select class="nsw-form__select" name="select-all-regions-4-default" id="select-all-regions-4-default" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                    <span id="select-all-regions-4-default-valid-text" class="nsw-form__helper nsw-form__helper--valid"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle</span>Your region is eligible for savings benefits</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-4-default">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-4-default" id="select-all-regions-4-default" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-4-default-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>Your region is eligible for savings benefits\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-4-default">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-4-default" id="select-all-regions-4-default" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-4-default-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>Your region is eligible for savings benefits\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-savings-programs-4-default">Savings programs you would like to claim</label>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-4-default" id="select-all-savings-programs-4-default" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                    <span id="select-all-savings-programs-4-default-valid-text" class="nsw-form__helper nsw-form__helper--valid"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle</span>The programs you have selected are available</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-4-default">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-4-default" id="select-all-savings-programs-4-default" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-4-default-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>The programs you have selected are available\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-4-default">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-4-default" id="select-all-savings-programs-4-default" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-4-default-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>The programs you have selected are available\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-light">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h3>Single select</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-regions-1-brand-light">Region</label>
+                      <select class="nsw-form__select" name="select-all-regions-1-brand-light" id="select-all-regions-1-brand-light" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-1-brand-light">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-1-brand-light" id="select-all-regions-1-brand-light" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-1-brand-light">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-1-brand-light" id="select-all-regions-1-brand-light" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Multiple select</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-savings-programs-1-brand-light">Savings programs you would like to claim</label>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-1-brand-light" id="select-all-savings-programs-1-brand-light" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-1-brand-light">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-1-brand-light" id="select-all-savings-programs-1-brand-light" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-1-brand-light">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-1-brand-light" id="select-all-savings-programs-1-brand-light" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Multiple select with many options</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-many-options-1-brand-light">Services you may need</label>
+                    <span class="nsw-form__helper" id="select-many-options-1-brand-light-helper-text">Select all that apply</span>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select services" data-multi-select-text="{n} services selected" data-n-multi-select="2" data-multi-select-max-height="45">
+                      <select name="select-many-options-1-brand-light" id="select-many-options-1-brand-light" aria-describedby="select-many-options-1-brand-light-helper-text" multiple >
+                        <option value="Birth certificate">Birth certificate</option>
+                        <option value="Change of name certificate">Change of name certificate</option>
+                        <option value="Driver licence">Driver licence</option>
+                        <option value="Photo card">Photo card</option>
+                        <option value="Vehicle registration">Vehicle registration</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="Opal card">Opal card</option>
+                        <option value="Public transport concession">Public transport concession</option>
+                        <option value="Seniors card">Seniors card</option>
+                        <option value="Companion card">Companion card</option>
+                        <option value="Carer support">Carer support</option>
+                        <option value="Disability support">Disability support</option>
+                        <option value="Housing assistance">Housing assistance</option>
+                        <option value="Rental bond loan">Rental bond loan</option>
+                        <option value="Energy rebate">Energy rebate</option>
+                        <option value="Water rebate">Water rebate</option>
+                        <option value="Cost of living support">Cost of living support</option>
+                        <option value="Family payments">Family payments</option>
+                        <option value="Child care assistance">Child care assistance</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="First lap voucher">First lap voucher</option>
+                        <option value="Learn to swim support">Learn to swim support</option>
+                        <option value="School travel pass">School travel pass</option>
+                        <option value="TAFE course support">TAFE course support</option>
+                        <option value="Apprenticeship support">Apprenticeship support</option>
+                        <option value="Small business support">Small business support</option>
+                        <option value="Business grants">Business grants</option>
+                        <option value="Disaster recovery support">Disaster recovery support</option>
+                        <option value="Flood assistance">Flood assistance</option>
+                        <option value="Drought assistance">Drought assistance</option>
+                        <option value="Fire safety check">Fire safety check</option>
+                        <option value="Planning certificate">Planning certificate</option>
+                        <option value="Property information">Property information</option>
+                        <option value="Land tax">Land tax</option>
+                        <option value="Payroll tax">Payroll tax</option>
+                        <option value="Fine payment">Fine payment</option>
+                        <option value="Court services">Court services</option>
+                        <option value="Victims support">Victims support</option>
+                        <option value="Community services">Community services</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-many-options-1-brand-light">Services you may need\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-many-options-1-brand-light-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select services" data-multi-select-text="{n} services selected" data-n-multi-select="2" data-multi-select-max-height="45">\n      \x3Cselect name="select-many-options-1-brand-light" id="select-many-options-1-brand-light" aria-describedby="select-many-options-1-brand-light-helper-text" multiple >\n        \x3Coption value="Birth certificate">Birth certificate\x3C/option>\n        \x3Coption value="Change of name certificate">Change of name certificate\x3C/option>\n        \x3Coption value="Driver licence">Driver licence\x3C/option>\n        \x3Coption value="Photo card">Photo card\x3C/option>\n        \x3Coption value="Vehicle registration">Vehicle registration\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="Opal card">Opal card\x3C/option>\n        \x3Coption value="Public transport concession">Public transport concession\x3C/option>\n        \x3Coption value="Seniors card">Seniors card\x3C/option>\n        \x3Coption value="Companion card">Companion card\x3C/option>\n        \x3Coption value="Carer support">Carer support\x3C/option>\n        \x3Coption value="Disability support">Disability support\x3C/option>\n        \x3Coption value="Housing assistance">Housing assistance\x3C/option>\n        \x3Coption value="Rental bond loan">Rental bond loan\x3C/option>\n        \x3Coption value="Energy rebate">Energy rebate\x3C/option>\n        \x3Coption value="Water rebate">Water rebate\x3C/option>\n        \x3Coption value="Cost of living support">Cost of living support\x3C/option>\n        \x3Coption value="Family payments">Family payments\x3C/option>\n        \x3Coption value="Child care assistance">Child care assistance\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="First lap voucher">First lap voucher\x3C/option>\n        \x3Coption value="Learn to swim support">Learn to swim support\x3C/option>\n        \x3Coption value="School travel pass">School travel pass\x3C/option>\n        \x3Coption value="TAFE course support">TAFE course support\x3C/option>\n        \x3Coption value="Apprenticeship support">Apprenticeship support\x3C/option>\n        \x3Coption value="Small business support">Small business support\x3C/option>\n        \x3Coption value="Business grants">Business grants\x3C/option>\n        \x3Coption value="Disaster recovery support">Disaster recovery support\x3C/option>\n        \x3Coption value="Flood assistance">Flood assistance\x3C/option>\n        \x3Coption value="Drought assistance">Drought assistance\x3C/option>\n        \x3Coption value="Fire safety check">Fire safety check\x3C/option>\n        \x3Coption value="Planning certificate">Planning certificate\x3C/option>\n        \x3Coption value="Property information">Property information\x3C/option>\n        \x3Coption value="Land tax">Land tax\x3C/option>\n        \x3Coption value="Payroll tax">Payroll tax\x3C/option>\n        \x3Coption value="Fine payment">Fine payment\x3C/option>\n        \x3Coption value="Court services">Court services\x3C/option>\n        \x3Coption value="Victims support">Victims support\x3C/option>\n        \x3Coption value="Community services">Community services\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-many-options-1-brand-light">Services you may need\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-many-options-1-brand-light-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select services" data-multi-select-text="{n} services selected" data-n-multi-select="2" data-multi-select-max-height="45">\n      \x3Cselect name="select-many-options-1-brand-light" id="select-many-options-1-brand-light" aria-describedby="select-many-options-1-brand-light-helper-text" multiple >\n        \x3Coption value="Birth certificate">Birth certificate\x3C/option>\n        \x3Coption value="Change of name certificate">Change of name certificate\x3C/option>\n        \x3Coption value="Driver licence">Driver licence\x3C/option>\n        \x3Coption value="Photo card">Photo card\x3C/option>\n        \x3Coption value="Vehicle registration">Vehicle registration\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="Opal card">Opal card\x3C/option>\n        \x3Coption value="Public transport concession">Public transport concession\x3C/option>\n        \x3Coption value="Seniors card">Seniors card\x3C/option>\n        \x3Coption value="Companion card">Companion card\x3C/option>\n        \x3Coption value="Carer support">Carer support\x3C/option>\n        \x3Coption value="Disability support">Disability support\x3C/option>\n        \x3Coption value="Housing assistance">Housing assistance\x3C/option>\n        \x3Coption value="Rental bond loan">Rental bond loan\x3C/option>\n        \x3Coption value="Energy rebate">Energy rebate\x3C/option>\n        \x3Coption value="Water rebate">Water rebate\x3C/option>\n        \x3Coption value="Cost of living support">Cost of living support\x3C/option>\n        \x3Coption value="Family payments">Family payments\x3C/option>\n        \x3Coption value="Child care assistance">Child care assistance\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="First lap voucher">First lap voucher\x3C/option>\n        \x3Coption value="Learn to swim support">Learn to swim support\x3C/option>\n        \x3Coption value="School travel pass">School travel pass\x3C/option>\n        \x3Coption value="TAFE course support">TAFE course support\x3C/option>\n        \x3Coption value="Apprenticeship support">Apprenticeship support\x3C/option>\n        \x3Coption value="Small business support">Small business support\x3C/option>\n        \x3Coption value="Business grants">Business grants\x3C/option>\n        \x3Coption value="Disaster recovery support">Disaster recovery support\x3C/option>\n        \x3Coption value="Flood assistance">Flood assistance\x3C/option>\n        \x3Coption value="Drought assistance">Drought assistance\x3C/option>\n        \x3Coption value="Fire safety check">Fire safety check\x3C/option>\n        \x3Coption value="Planning certificate">Planning certificate\x3C/option>\n        \x3Coption value="Property information">Property information\x3C/option>\n        \x3Coption value="Land tax">Land tax\x3C/option>\n        \x3Coption value="Payroll tax">Payroll tax\x3C/option>\n        \x3Coption value="Fine payment">Fine payment\x3C/option>\n        \x3Coption value="Court services">Court services\x3C/option>\n        \x3Coption value="Victims support">Victims support\x3C/option>\n        \x3Coption value="Community services">Community services\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Helper text</h3>
+            
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-regions-2-brand-light">Region</label>
+                    <span class="nsw-form__helper" id="select-all-regions-2-brand-light-helper-text">Your region of residence</span>
+                      <select class="nsw-form__select" name="select-all-regions-2-brand-light" id="select-all-regions-2-brand-light" aria-describedby="select-all-regions-2-brand-light-helper-text" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-2-brand-light">Region\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-regions-2-brand-light-helper-text">Your region of residence\x3C/span>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-2-brand-light" id="select-all-regions-2-brand-light" aria-describedby="select-all-regions-2-brand-light-helper-text" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-2-brand-light">Region\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-regions-2-brand-light-helper-text">Your region of residence\x3C/span>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-2-brand-light" id="select-all-regions-2-brand-light" aria-describedby="select-all-regions-2-brand-light-helper-text" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-savings-programs-2-brand-light">Savings programs you would like to claim</label>
+                    <span class="nsw-form__helper" id="select-all-savings-programs-2-brand-light-helper-text">Select all that apply</span>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-2-brand-light" id="select-all-savings-programs-2-brand-light" aria-describedby="select-all-savings-programs-2-brand-light-helper-text" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-2-brand-light">Savings programs you would like to claim\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-savings-programs-2-brand-light-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-2-brand-light" id="select-all-savings-programs-2-brand-light" aria-describedby="select-all-savings-programs-2-brand-light-helper-text" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-2-brand-light">Savings programs you would like to claim\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-savings-programs-2-brand-light-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-2-brand-light" id="select-all-savings-programs-2-brand-light" aria-describedby="select-all-savings-programs-2-brand-light-helper-text" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Error</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label nsw-form__required" for="select-all-regions-3-brand-light">Region<span class="sr-only"> (required)</span></label>
+                      <select class="nsw-form__select" name="select-all-regions-3-brand-light" id="select-all-regions-3-brand-light" aria-invalid="true" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                    <span id="select-all-regions-3-brand-light-error-text" class="nsw-form__helper nsw-form__helper--error"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select a region of residence</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-regions-3-brand-light">Region\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-3-brand-light" id="select-all-regions-3-brand-light" aria-invalid="true" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-3-brand-light-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select a region of residence\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-regions-3-brand-light">Region\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-3-brand-light" id="select-all-regions-3-brand-light" aria-invalid="true" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-3-brand-light-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select a region of residence\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label nsw-form__required" for="select-all-savings-programs-3-brand-light">Savings programs you would like to claim<span class="sr-only"> (required)</span></label>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-3-brand-light" id="select-all-savings-programs-3-brand-light" aria-invalid="true" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                    <span id="select-all-savings-programs-3-brand-light-error-text" class="nsw-form__helper nsw-form__helper--error"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select the savings programs you would like to claim</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-savings-programs-3-brand-light">Savings programs you would like to claim\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-3-brand-light" id="select-all-savings-programs-3-brand-light" aria-invalid="true" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-3-brand-light-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select the savings programs you would like to claim\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-savings-programs-3-brand-light">Savings programs you would like to claim\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-3-brand-light" id="select-all-savings-programs-3-brand-light" aria-invalid="true" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-3-brand-light-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select the savings programs you would like to claim\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Validation</h3>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-regions-4-brand-light">Region</label>
+                      <select class="nsw-form__select" name="select-all-regions-4-brand-light" id="select-all-regions-4-brand-light" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                    <span id="select-all-regions-4-brand-light-valid-text" class="nsw-form__helper nsw-form__helper--valid"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle</span>Your region is eligible for savings benefits</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-4-brand-light">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-4-brand-light" id="select-all-regions-4-brand-light" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-4-brand-light-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>Your region is eligible for savings benefits\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-4-brand-light">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-4-brand-light" id="select-all-regions-4-brand-light" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-4-brand-light-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>Your region is eligible for savings benefits\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <div class="nsw-docs__example nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-savings-programs-4-brand-light">Savings programs you would like to claim</label>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-4-brand-light" id="select-all-savings-programs-4-brand-light" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                    <span id="select-all-savings-programs-4-brand-light-valid-text" class="nsw-form__helper nsw-form__helper--valid"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle</span>The programs you have selected are available</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-4-brand-light">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-4-brand-light" id="select-all-savings-programs-4-brand-light" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-4-brand-light-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>The programs you have selected are available\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-4-brand-light">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-4-brand-light" id="select-all-savings-programs-4-brand-light" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-4-brand-light-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>The programs you have selected are available\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-dark nsw-section--invert">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h3>Single select</h3>
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-regions-1-inverted">Region</label>
+                      <select class="nsw-form__select" name="select-all-regions-1-inverted" id="select-all-regions-1-inverted" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-1-inverted">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-1-inverted" id="select-all-regions-1-inverted" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-1-inverted">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-1-inverted" id="select-all-regions-1-inverted" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Multiple select</h3>
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-savings-programs-1-inverted">Savings programs you would like to claim</label>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-1-inverted" id="select-all-savings-programs-1-inverted" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-1-inverted">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-1-inverted" id="select-all-savings-programs-1-inverted" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-1-inverted">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-1-inverted" id="select-all-savings-programs-1-inverted" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Multiple select with many options</h3>
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-many-options-1-inverted">Services you may need</label>
+                    <span class="nsw-form__helper" id="select-many-options-1-inverted-helper-text">Select all that apply</span>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select services" data-multi-select-text="{n} services selected" data-n-multi-select="2" data-multi-select-max-height="45">
+                      <select name="select-many-options-1-inverted" id="select-many-options-1-inverted" aria-describedby="select-many-options-1-inverted-helper-text" multiple >
+                        <option value="Birth certificate">Birth certificate</option>
+                        <option value="Change of name certificate">Change of name certificate</option>
+                        <option value="Driver licence">Driver licence</option>
+                        <option value="Photo card">Photo card</option>
+                        <option value="Vehicle registration">Vehicle registration</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="Opal card">Opal card</option>
+                        <option value="Public transport concession">Public transport concession</option>
+                        <option value="Seniors card">Seniors card</option>
+                        <option value="Companion card">Companion card</option>
+                        <option value="Carer support">Carer support</option>
+                        <option value="Disability support">Disability support</option>
+                        <option value="Housing assistance">Housing assistance</option>
+                        <option value="Rental bond loan">Rental bond loan</option>
+                        <option value="Energy rebate">Energy rebate</option>
+                        <option value="Water rebate">Water rebate</option>
+                        <option value="Cost of living support">Cost of living support</option>
+                        <option value="Family payments">Family payments</option>
+                        <option value="Child care assistance">Child care assistance</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="First lap voucher">First lap voucher</option>
+                        <option value="Learn to swim support">Learn to swim support</option>
+                        <option value="School travel pass">School travel pass</option>
+                        <option value="TAFE course support">TAFE course support</option>
+                        <option value="Apprenticeship support">Apprenticeship support</option>
+                        <option value="Small business support">Small business support</option>
+                        <option value="Business grants">Business grants</option>
+                        <option value="Disaster recovery support">Disaster recovery support</option>
+                        <option value="Flood assistance">Flood assistance</option>
+                        <option value="Drought assistance">Drought assistance</option>
+                        <option value="Fire safety check">Fire safety check</option>
+                        <option value="Planning certificate">Planning certificate</option>
+                        <option value="Property information">Property information</option>
+                        <option value="Land tax">Land tax</option>
+                        <option value="Payroll tax">Payroll tax</option>
+                        <option value="Fine payment">Fine payment</option>
+                        <option value="Court services">Court services</option>
+                        <option value="Victims support">Victims support</option>
+                        <option value="Community services">Community services</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-many-options-1-inverted">Services you may need\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-many-options-1-inverted-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select services" data-multi-select-text="{n} services selected" data-n-multi-select="2" data-multi-select-max-height="45">\n      \x3Cselect name="select-many-options-1-inverted" id="select-many-options-1-inverted" aria-describedby="select-many-options-1-inverted-helper-text" multiple >\n        \x3Coption value="Birth certificate">Birth certificate\x3C/option>\n        \x3Coption value="Change of name certificate">Change of name certificate\x3C/option>\n        \x3Coption value="Driver licence">Driver licence\x3C/option>\n        \x3Coption value="Photo card">Photo card\x3C/option>\n        \x3Coption value="Vehicle registration">Vehicle registration\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="Opal card">Opal card\x3C/option>\n        \x3Coption value="Public transport concession">Public transport concession\x3C/option>\n        \x3Coption value="Seniors card">Seniors card\x3C/option>\n        \x3Coption value="Companion card">Companion card\x3C/option>\n        \x3Coption value="Carer support">Carer support\x3C/option>\n        \x3Coption value="Disability support">Disability support\x3C/option>\n        \x3Coption value="Housing assistance">Housing assistance\x3C/option>\n        \x3Coption value="Rental bond loan">Rental bond loan\x3C/option>\n        \x3Coption value="Energy rebate">Energy rebate\x3C/option>\n        \x3Coption value="Water rebate">Water rebate\x3C/option>\n        \x3Coption value="Cost of living support">Cost of living support\x3C/option>\n        \x3Coption value="Family payments">Family payments\x3C/option>\n        \x3Coption value="Child care assistance">Child care assistance\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="First lap voucher">First lap voucher\x3C/option>\n        \x3Coption value="Learn to swim support">Learn to swim support\x3C/option>\n        \x3Coption value="School travel pass">School travel pass\x3C/option>\n        \x3Coption value="TAFE course support">TAFE course support\x3C/option>\n        \x3Coption value="Apprenticeship support">Apprenticeship support\x3C/option>\n        \x3Coption value="Small business support">Small business support\x3C/option>\n        \x3Coption value="Business grants">Business grants\x3C/option>\n        \x3Coption value="Disaster recovery support">Disaster recovery support\x3C/option>\n        \x3Coption value="Flood assistance">Flood assistance\x3C/option>\n        \x3Coption value="Drought assistance">Drought assistance\x3C/option>\n        \x3Coption value="Fire safety check">Fire safety check\x3C/option>\n        \x3Coption value="Planning certificate">Planning certificate\x3C/option>\n        \x3Coption value="Property information">Property information\x3C/option>\n        \x3Coption value="Land tax">Land tax\x3C/option>\n        \x3Coption value="Payroll tax">Payroll tax\x3C/option>\n        \x3Coption value="Fine payment">Fine payment\x3C/option>\n        \x3Coption value="Court services">Court services\x3C/option>\n        \x3Coption value="Victims support">Victims support\x3C/option>\n        \x3Coption value="Community services">Community services\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-many-options-1-inverted">Services you may need\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-many-options-1-inverted-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select services" data-multi-select-text="{n} services selected" data-n-multi-select="2" data-multi-select-max-height="45">\n      \x3Cselect name="select-many-options-1-inverted" id="select-many-options-1-inverted" aria-describedby="select-many-options-1-inverted-helper-text" multiple >\n        \x3Coption value="Birth certificate">Birth certificate\x3C/option>\n        \x3Coption value="Change of name certificate">Change of name certificate\x3C/option>\n        \x3Coption value="Driver licence">Driver licence\x3C/option>\n        \x3Coption value="Photo card">Photo card\x3C/option>\n        \x3Coption value="Vehicle registration">Vehicle registration\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="Opal card">Opal card\x3C/option>\n        \x3Coption value="Public transport concession">Public transport concession\x3C/option>\n        \x3Coption value="Seniors card">Seniors card\x3C/option>\n        \x3Coption value="Companion card">Companion card\x3C/option>\n        \x3Coption value="Carer support">Carer support\x3C/option>\n        \x3Coption value="Disability support">Disability support\x3C/option>\n        \x3Coption value="Housing assistance">Housing assistance\x3C/option>\n        \x3Coption value="Rental bond loan">Rental bond loan\x3C/option>\n        \x3Coption value="Energy rebate">Energy rebate\x3C/option>\n        \x3Coption value="Water rebate">Water rebate\x3C/option>\n        \x3Coption value="Cost of living support">Cost of living support\x3C/option>\n        \x3Coption value="Family payments">Family payments\x3C/option>\n        \x3Coption value="Child care assistance">Child care assistance\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="First lap voucher">First lap voucher\x3C/option>\n        \x3Coption value="Learn to swim support">Learn to swim support\x3C/option>\n        \x3Coption value="School travel pass">School travel pass\x3C/option>\n        \x3Coption value="TAFE course support">TAFE course support\x3C/option>\n        \x3Coption value="Apprenticeship support">Apprenticeship support\x3C/option>\n        \x3Coption value="Small business support">Small business support\x3C/option>\n        \x3Coption value="Business grants">Business grants\x3C/option>\n        \x3Coption value="Disaster recovery support">Disaster recovery support\x3C/option>\n        \x3Coption value="Flood assistance">Flood assistance\x3C/option>\n        \x3Coption value="Drought assistance">Drought assistance\x3C/option>\n        \x3Coption value="Fire safety check">Fire safety check\x3C/option>\n        \x3Coption value="Planning certificate">Planning certificate\x3C/option>\n        \x3Coption value="Property information">Property information\x3C/option>\n        \x3Coption value="Land tax">Land tax\x3C/option>\n        \x3Coption value="Payroll tax">Payroll tax\x3C/option>\n        \x3Coption value="Fine payment">Fine payment\x3C/option>\n        \x3Coption value="Court services">Court services\x3C/option>\n        \x3Coption value="Victims support">Victims support\x3C/option>\n        \x3Coption value="Community services">Community services\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Helper text</h3>
+            
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-regions-2-inverted">Region</label>
+                    <span class="nsw-form__helper" id="select-all-regions-2-inverted-helper-text">Your region of residence</span>
+                      <select class="nsw-form__select" name="select-all-regions-2-inverted" id="select-all-regions-2-inverted" aria-describedby="select-all-regions-2-inverted-helper-text" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-2-inverted">Region\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-regions-2-inverted-helper-text">Your region of residence\x3C/span>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-2-inverted" id="select-all-regions-2-inverted" aria-describedby="select-all-regions-2-inverted-helper-text" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-2-inverted">Region\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-regions-2-inverted-helper-text">Your region of residence\x3C/span>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-2-inverted" id="select-all-regions-2-inverted" aria-describedby="select-all-regions-2-inverted-helper-text" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <div class="nsw-docs__example nsw-section--invert nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-savings-programs-2-inverted">Savings programs you would like to claim</label>
+                    <span class="nsw-form__helper" id="select-all-savings-programs-2-inverted-helper-text">Select all that apply</span>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-2-inverted" id="select-all-savings-programs-2-inverted" aria-describedby="select-all-savings-programs-2-inverted-helper-text" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-2-inverted">Savings programs you would like to claim\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-savings-programs-2-inverted-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-2-inverted" id="select-all-savings-programs-2-inverted" aria-describedby="select-all-savings-programs-2-inverted-helper-text" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-2-inverted">Savings programs you would like to claim\x3C/label>\n    \x3Cspan class="nsw-form__helper" id="select-all-savings-programs-2-inverted-helper-text">Select all that apply\x3C/span>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-2-inverted" id="select-all-savings-programs-2-inverted" aria-describedby="select-all-savings-programs-2-inverted-helper-text" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Error</h3>
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label nsw-form__required" for="select-all-regions-3-inverted">Region<span class="sr-only"> (required)</span></label>
+                      <select class="nsw-form__select" name="select-all-regions-3-inverted" id="select-all-regions-3-inverted" aria-invalid="true" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                    <span id="select-all-regions-3-inverted-error-text" class="nsw-form__helper nsw-form__helper--error"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select a region of residence</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-regions-3-inverted">Region\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-3-inverted" id="select-all-regions-3-inverted" aria-invalid="true" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-3-inverted-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select a region of residence\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-regions-3-inverted">Region\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-3-inverted" id="select-all-regions-3-inverted" aria-invalid="true" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-3-inverted-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select a region of residence\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <div class="nsw-docs__example nsw-section--invert nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label nsw-form__required" for="select-all-savings-programs-3-inverted">Savings programs you would like to claim<span class="sr-only"> (required)</span></label>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-3-inverted" id="select-all-savings-programs-3-inverted" aria-invalid="true" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                    <span id="select-all-savings-programs-3-inverted-error-text" class="nsw-form__helper nsw-form__helper--error"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel</span>Please select the savings programs you would like to claim</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-savings-programs-3-inverted">Savings programs you would like to claim\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-3-inverted" id="select-all-savings-programs-3-inverted" aria-invalid="true" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-3-inverted-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select the savings programs you would like to claim\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label nsw-form__required" for="select-all-savings-programs-3-inverted">Savings programs you would like to claim\x3Cspan class="sr-only"> (required)\x3C/span>\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-3-inverted" id="select-all-savings-programs-3-inverted" aria-invalid="true" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-3-inverted-error-text" class="nsw-form__helper nsw-form__helper--error">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">cancel\x3C/span>Please select the savings programs you would like to claim\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <h3>Validation</h3>
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-regions-4-inverted">Region</label>
+                      <select class="nsw-form__select" name="select-all-regions-4-inverted" id="select-all-regions-4-inverted" ><option value="">Please select</option>
+                        <option value="Central Coast">Central Coast</option>
+                        <option value="Central West &amp; Orana">Central West &amp; Orana</option>
+                        <option value="Far West">Far West</option>
+                        <option value="Hunter">Hunter</option>
+                        <option value="Illawarra-Shoalhaven">Illawarra-Shoalhaven</option>
+                        <option value="New England &amp; North West">New England &amp; North West</option>
+                        <option value="North Coast">North Coast</option>
+                        <option value="Riverina Murray">Riverina Murray</option>
+                      </select>
+                    <span id="select-all-regions-4-inverted-valid-text" class="nsw-form__helper nsw-form__helper--valid"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle</span>Your region is eligible for savings benefits</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-4-inverted">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-4-inverted" id="select-all-regions-4-inverted" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-4-inverted-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>Your region is eligible for savings benefits\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-regions-4-inverted">Region\x3C/label>\n      \x3Cselect class="nsw-form__select" name="select-all-regions-4-inverted" id="select-all-regions-4-inverted" >\x3Coption value="">Please select\x3C/option>\n        \x3Coption value="Central Coast">Central Coast\x3C/option>\n        \x3Coption value="Central West &amp; Orana">Central West &amp; Orana\x3C/option>\n        \x3Coption value="Far West">Far West\x3C/option>\n        \x3Coption value="Hunter">Hunter\x3C/option>\n        \x3Coption value="Illawarra-Shoalhaven">Illawarra-Shoalhaven\x3C/option>\n        \x3Coption value="New England &amp; North West">New England &amp; North West\x3C/option>\n        \x3Coption value="North Coast">North Coast\x3C/option>\n        \x3Coption value="Riverina Murray">Riverina Murray\x3C/option>\n      \x3C/select>\n    \x3Cspan id="select-all-regions-4-inverted-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>Your region is eligible for savings benefits\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+            <div class="nsw-docs__example nsw-section--invert nsw-m-top-sm">
+              <div class="nsw-docs__component">
+                <div class="nsw-form">
+                  <div class="nsw-form__group">
+                    <label class="nsw-form__label" for="select-all-savings-programs-4-inverted">Savings programs you would like to claim</label>
+                    <div class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">
+                      <select name="select-all-savings-programs-4-inverted" id="select-all-savings-programs-4-inverted" multiple >
+                        <option value="Stay NSW voucher">Stay NSW voucher</option>
+                        <option value="Regional seniors travel card">Regional seniors travel card</option>
+                        <option value="Toll relief">Toll relief</option>
+                        <option value="First lap swimming voucher">First lap swimming voucher</option>
+                        <option value="Active kids voucher">Active kids voucher</option>
+                        <option value="Creative kids voucher">Creative kids voucher</option>
+                        <option value="Energy made easy">Energy made easy</option>
+                      </select>
+                    </div>
+                    <span id="select-all-savings-programs-4-inverted-valid-text" class="nsw-form__helper nsw-form__helper--valid"><span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle</span>The programs you have selected are available</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-4-inverted">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-4-inverted" id="select-all-savings-programs-4-inverted" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-4-inverted-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>The programs you have selected are available\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-form">\n  \x3Cdiv class="nsw-form__group">\n    \x3Clabel class="nsw-form__label" for="select-all-savings-programs-4-inverted">Savings programs you would like to claim\x3C/label>\n    \x3Cdiv class="nsw-multi-select js-multi-select" data-select-text="Select savings programs" data-multi-select-text="{n} savings programs selected" data-n-multi-select="2">\n      \x3Cselect name="select-all-savings-programs-4-inverted" id="select-all-savings-programs-4-inverted" multiple >\n        \x3Coption value="Stay NSW voucher">Stay NSW voucher\x3C/option>\n        \x3Coption value="Regional seniors travel card">Regional seniors travel card\x3C/option>\n        \x3Coption value="Toll relief">Toll relief\x3C/option>\n        \x3Coption value="First lap swimming voucher">First lap swimming voucher\x3C/option>\n        \x3Coption value="Active kids voucher">Active kids voucher\x3C/option>\n        \x3Coption value="Creative kids voucher">Creative kids voucher\x3C/option>\n        \x3Coption value="Energy made easy">Energy made easy\x3C/option>\n      \x3C/select>\n    \x3C/div>\n    \x3Cspan id="select-all-savings-programs-4-inverted-valid-text" class="nsw-form__helper nsw-form__helper--valid">\x3Cspan class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">check_circle\x3C/span>The programs you have selected are available\x3C/span>\n  \x3C/div>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://designsystem.nsw.gov.au/docs/js/docs.js"></script>
+
+  <button type="button" class="nsw-button nsw-button--dark nsw-button--flex nsw-back-to-top js-back-to-top">
+  </button>  <script src="https://designsystem.nsw.gov.au/js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+  </script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

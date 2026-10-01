@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head><script async data-category="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-49T9M12F86"></script>
+<script data-category="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-49T9M12F86');
+</script>
+  <script data-category="analytics">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2NKBBJZ');</script>
+  
+  <title>Tabs: Demo &amp; code - NSW Digital Design System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.nsw.gov.au/nsw-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="https://designsystem.nsw.gov.au/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="https://designsystem.nsw.gov.au/favicon.svg" sizes="any" />
+  <link rel="icon" type="image/png" href="https://designsystem.nsw.gov.au/favicon.png" sizes="96x96" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://designsystem.nsw.gov.au/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="NSW Design System" />
+  <link rel="manifest" href="https://designsystem.nsw.gov.au/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://designsystem.nsw.gov.au/docs/css/docs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>
+  <!-- Hotjar Tracking Code for NSW Design System -->
+  <script data-category="analytics">
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 5063548, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1; 
+      r.setAttribute('data-category', 'analytics');
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+  <script src="https://designsystem.nsw.gov.au/cookie-consent-config.js"></script>
+</head>
+
+<body class="nsw-docs-demo">
+
+
+<header class="nsw-header nsw-color-swatches-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__inner nsw-color-swatches-header__inner">
+      <a class="nsw-link nsw-link--icon nsw-color-swatches-header__back" href="https://designsystem.nsw.gov.au/components/tabs/index.html">
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">west</span>
+        <span>Back</span>
+      </a>
+      <div class="nsw-color-swatches js-color-swatches">
+        <legend class="nsw-color-swatches__legend" aria-live="polite" aria-atomic="true"><span class="nsw-color-swatches__color js-color-swatches__color">Blue 01</span></legend>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="nsw-section">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <h1>Tabs: Demo &amp; code</h1>
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-tabs js-tabs">
+                  <ul class="nsw-tabs__list">
+                    <li><a href="#section1-default">New and existing homes</a></li>
+                    <li><a href="#section2-default">Vacant land</a></li>
+                    <li><a href="#section3-default">Knockdown rebuild</a></li>
+                  </ul>
+                  <section id="section1-default" class="nsw-tabs__content">
+                    <h2>New and existing homes</h2><p>As a first home buyer, you may be eligible for a <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> concession or exemption.</p><ul><li>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.</li><li>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.</li></ul>
+                  </section>
+                  <section id="section2-default" class="nsw-tabs__content">
+                    <h2>Vacant land</h2> <p>The FHBAS applies to vacant land on which you plan to build your home.</p><ul> <li>You won’t pay any <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> if your land is valued at less than $350,000.</li><li>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.</li></ul>
+                  </section>
+                  <section id="section3-default" class="nsw-tabs__content">
+                    <h2>Knockdown rebuild</h2> <p>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!<br/>KnockDown Rebuild by Metricon gives you the best of both worlds.</p><p>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.</p>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-tabs js-tabs">\n  \x3Cul class="nsw-tabs__list">\n    \x3Cli>\x3Ca href="#section1-default">New and existing homes\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section2-default">Vacant land\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section3-default">Knockdown rebuild\x3C/a>\x3C/li>\n  \x3C/ul>\n  \x3Csection id="section1-default" class="nsw-tabs__content">\n    \x3Ch2>New and existing homes\x3C/h2>\x3Cp>As a first home buyer, you may be eligible for a \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> concession or exemption.\x3C/p>\x3Cul>\x3Cli>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.\x3C/li>\x3Cli>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section2-default" class="nsw-tabs__content">\n    \x3Ch2>Vacant land\x3C/h2> \x3Cp>The FHBAS applies to vacant land on which you plan to build your home.\x3C/p>\x3Cul> \x3Cli>You won’t pay any \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> if your land is valued at less than $350,000.\x3C/li>\x3Cli>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section3-default" class="nsw-tabs__content">\n    \x3Ch2>Knockdown rebuild\x3C/h2> \x3Cp>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!\x3Cbr/>KnockDown Rebuild by Metricon gives you the best of both worlds.\x3C/p>\x3Cp>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.\x3C/p>\n  \x3C/section>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-tabs js-tabs">\n  \x3Cul class="nsw-tabs__list">\n    \x3Cli>\x3Ca href="#section1-default">New and existing homes\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section2-default">Vacant land\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section3-default">Knockdown rebuild\x3C/a>\x3C/li>\n  \x3C/ul>\n  \x3Csection id="section1-default" class="nsw-tabs__content">\n    \x3Ch2>New and existing homes\x3C/h2>\x3Cp>As a first home buyer, you may be eligible for a \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> concession or exemption.\x3C/p>\x3Cul>\x3Cli>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.\x3C/li>\x3Cli>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section2-default" class="nsw-tabs__content">\n    \x3Ch2>Vacant land\x3C/h2> \x3Cp>The FHBAS applies to vacant land on which you plan to build your home.\x3C/p>\x3Cul> \x3Cli>You won’t pay any \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> if your land is valued at less than $350,000.\x3C/li>\x3Cli>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section3-default" class="nsw-tabs__content">\n    \x3Ch2>Knockdown rebuild\x3C/h2> \x3Cp>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!\x3Cbr/>KnockDown Rebuild by Metricon gives you the best of both worlds.\x3C/p>\x3Cp>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.\x3C/p>\n  \x3C/section>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-light">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <div class="nsw-docs__example">
+              <div class="nsw-docs__component">
+                <div class="nsw-tabs js-tabs">
+                  <ul class="nsw-tabs__list">
+                    <li><a href="#section1-brand-light">New and existing homes</a></li>
+                    <li><a href="#section2-brand-light">Vacant land</a></li>
+                    <li><a href="#section3-brand-light">Knockdown rebuild</a></li>
+                  </ul>
+                  <section id="section1-brand-light" class="nsw-tabs__content">
+                    <h2>New and existing homes</h2><p>As a first home buyer, you may be eligible for a <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> concession or exemption.</p><ul><li>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.</li><li>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.</li></ul>
+                  </section>
+                  <section id="section2-brand-light" class="nsw-tabs__content">
+                    <h2>Vacant land</h2> <p>The FHBAS applies to vacant land on which you plan to build your home.</p><ul> <li>You won’t pay any <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> if your land is valued at less than $350,000.</li><li>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.</li></ul>
+                  </section>
+                  <section id="section3-brand-light" class="nsw-tabs__content">
+                    <h2>Knockdown rebuild</h2> <p>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!<br/>KnockDown Rebuild by Metricon gives you the best of both worlds.</p><p>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.</p>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-tabs js-tabs">\n  \x3Cul class="nsw-tabs__list">\n    \x3Cli>\x3Ca href="#section1-brand-light">New and existing homes\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section2-brand-light">Vacant land\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section3-brand-light">Knockdown rebuild\x3C/a>\x3C/li>\n  \x3C/ul>\n  \x3Csection id="section1-brand-light" class="nsw-tabs__content">\n    \x3Ch2>New and existing homes\x3C/h2>\x3Cp>As a first home buyer, you may be eligible for a \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> concession or exemption.\x3C/p>\x3Cul>\x3Cli>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.\x3C/li>\x3Cli>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section2-brand-light" class="nsw-tabs__content">\n    \x3Ch2>Vacant land\x3C/h2> \x3Cp>The FHBAS applies to vacant land on which you plan to build your home.\x3C/p>\x3Cul> \x3Cli>You won’t pay any \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> if your land is valued at less than $350,000.\x3C/li>\x3Cli>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section3-brand-light" class="nsw-tabs__content">\n    \x3Ch2>Knockdown rebuild\x3C/h2> \x3Cp>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!\x3Cbr/>KnockDown Rebuild by Metricon gives you the best of both worlds.\x3C/p>\x3Cp>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.\x3C/p>\n  \x3C/section>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-tabs js-tabs">\n  \x3Cul class="nsw-tabs__list">\n    \x3Cli>\x3Ca href="#section1-brand-light">New and existing homes\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section2-brand-light">Vacant land\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section3-brand-light">Knockdown rebuild\x3C/a>\x3C/li>\n  \x3C/ul>\n  \x3Csection id="section1-brand-light" class="nsw-tabs__content">\n    \x3Ch2>New and existing homes\x3C/h2>\x3Cp>As a first home buyer, you may be eligible for a \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> concession or exemption.\x3C/p>\x3Cul>\x3Cli>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.\x3C/li>\x3Cli>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section2-brand-light" class="nsw-tabs__content">\n    \x3Ch2>Vacant land\x3C/h2> \x3Cp>The FHBAS applies to vacant land on which you plan to build your home.\x3C/p>\x3Cul> \x3Cli>You won’t pay any \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> if your land is valued at less than $350,000.\x3C/li>\x3Cli>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section3-brand-light" class="nsw-tabs__content">\n    \x3Ch2>Knockdown rebuild\x3C/h2> \x3Cp>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!\x3Cbr/>KnockDown Rebuild by Metricon gives you the best of both worlds.\x3C/p>\x3Cp>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.\x3C/p>\n  \x3C/section>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="nsw-section nsw-section--brand-dark nsw-section--invert">
+  <div class="nsw-container nsw-p-y-sm">
+    <div class="nsw-layout">
+      <main class="nsw-layout__main">
+            <div class="nsw-docs__example nsw-section--invert">
+              <div class="nsw-docs__component">
+                <div class="nsw-tabs js-tabs">
+                  <ul class="nsw-tabs__list">
+                    <li><a href="#section1-inverted">New and existing homes</a></li>
+                    <li><a href="#section2-inverted">Vacant land</a></li>
+                    <li><a href="#section3-inverted">Knockdown rebuild</a></li>
+                  </ul>
+                  <section id="section1-inverted" class="nsw-tabs__content">
+                    <h2>New and existing homes</h2><p>As a first home buyer, you may be eligible for a <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> concession or exemption.</p><ul><li>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.</li><li>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.</li></ul>
+                  </section>
+                  <section id="section2-inverted" class="nsw-tabs__content">
+                    <h2>Vacant land</h2> <p>The FHBAS applies to vacant land on which you plan to build your home.</p><ul> <li>You won’t pay any <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> if your land is valued at less than $350,000.</li><li>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.</li></ul>
+                  </section>
+                  <section id="section3-inverted" class="nsw-tabs__content">
+                    <h2>Knockdown rebuild</h2> <p>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!<br/>KnockDown Rebuild by Metricon gives you the best of both worlds.</p><p>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.</p>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="nsw-docs-code">
+              <div class="nsw-show-more">
+                <details class="nsw-show-more__details">
+                  <summary class="nsw-show-more__toggle">
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--show">Show code</span>
+                    <span class="nsw-show-more__toggle-text nsw-show-more__toggle-text--hide">Hide code</span>
+                    <span class="material-icons nsw-material-icons nsw-show-more__icon" focusable="false" aria-hidden="true">keyboard_arrow_down</span>
+                  </summary>
+                  <div class="nsw-show-more__content nsw-docs-code__content">
+                    <button type="button" class="nsw-button nsw-button--dark-outline-solid nsw-button--flex nsw-button--small js-code-copy">
+                      <span>Copy</span>
+                      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">content_copy</span>
+                    </button>
+                    <div class="nsw-docs-code__copy" aria-hidden="true" tabindex="-1"><script>document.write((`\x3Cdiv class="nsw-tabs js-tabs">\n  \x3Cul class="nsw-tabs__list">\n    \x3Cli>\x3Ca href="#section1-inverted">New and existing homes\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section2-inverted">Vacant land\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section3-inverted">Knockdown rebuild\x3C/a>\x3C/li>\n  \x3C/ul>\n  \x3Csection id="section1-inverted" class="nsw-tabs__content">\n    \x3Ch2>New and existing homes\x3C/h2>\x3Cp>As a first home buyer, you may be eligible for a \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> concession or exemption.\x3C/p>\x3Cul>\x3Cli>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.\x3C/li>\x3Cli>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section2-inverted" class="nsw-tabs__content">\n    \x3Ch2>Vacant land\x3C/h2> \x3Cp>The FHBAS applies to vacant land on which you plan to build your home.\x3C/p>\x3Cul> \x3Cli>You won’t pay any \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> if your land is valued at less than $350,000.\x3C/li>\x3Cli>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section3-inverted" class="nsw-tabs__content">\n    \x3Ch2>Knockdown rebuild\x3C/h2> \x3Cp>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!\x3Cbr/>KnockDown Rebuild by Metricon gives you the best of both worlds.\x3C/p>\x3Cp>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.\x3C/p>\n  \x3C/section>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;"));</script></div>
+                    <div class="nsw-docs-code__wrapper" tabindex="0">
+            <pre><code class="html"><script>document.write((`\x3Cdiv class="nsw-tabs js-tabs">\n  \x3Cul class="nsw-tabs__list">\n    \x3Cli>\x3Ca href="#section1-inverted">New and existing homes\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section2-inverted">Vacant land\x3C/a>\x3C/li>\n    \x3Cli>\x3Ca href="#section3-inverted">Knockdown rebuild\x3C/a>\x3C/li>\n  \x3C/ul>\n  \x3Csection id="section1-inverted" class="nsw-tabs__content">\n    \x3Ch2>New and existing homes\x3C/h2>\x3Cp>As a first home buyer, you may be eligible for a \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> concession or exemption.\x3C/p>\x3Cul>\x3Cli>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.\x3C/li>\x3Cli>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section2-inverted" class="nsw-tabs__content">\n    \x3Ch2>Vacant land\x3C/h2> \x3Cp>The FHBAS applies to vacant land on which you plan to build your home.\x3C/p>\x3Cul> \x3Cli>You won’t pay any \x3Ca href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty\x3C/a> if your land is valued at less than $350,000.\x3C/li>\x3Cli>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.\x3C/li>\x3C/ul>\n  \x3C/section>\n  \x3Csection id="section3-inverted" class="nsw-tabs__content">\n    \x3Ch2>Knockdown rebuild\x3C/h2> \x3Cp>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!\x3Cbr/>KnockDown Rebuild by Metricon gives you the best of both worlds.\x3C/p>\x3Cp>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.\x3C/p>\n  \x3C/section>\n\x3C/div>`).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"));</script></code></pre>
+                    </div>
+                  </div>
+                </details>
+              </div>
+            </div>
+            
+            
+      </main>
+      <div class="nsw-layout__sidebar nsw-layout__sidebar--desktop"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://designsystem.nsw.gov.au/docs/js/docs.js"></script>
+
+  <button type="button" class="nsw-button nsw-button--dark nsw-button--flex nsw-back-to-top js-back-to-top">
+  </button>  <script src="https://designsystem.nsw.gov.au/js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+  </script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>
