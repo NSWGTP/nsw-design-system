@@ -22,10 +22,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalnsw/nsw-design-system.git"
+    "url": "https://github.com/NSWGTP/nsw-design-system.git"
   },
   "bugs": {
-    "url": "https://github.com/digitalnsw/nsw-design-system/issues"
+    "url": "https://github.com/NSWGTP/nsw-design-system/issues"
   },
   "homepage": "https://www.digital.nsw.gov.au/digital-design-system",
   "scripts": {
