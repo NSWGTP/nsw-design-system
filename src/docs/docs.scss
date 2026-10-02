@@ -153,6 +153,9 @@
     flex-direction: column;
     background-color: var(--nsw-white);
 
+    .nsw-docs--compact & {
+      min-height: auto;
+    }
 
     &--menu {
       .nsw-docs__component {
@@ -194,6 +197,10 @@
 
     @include nsw.breakpoint(nsw.$nsw-desktop-breakpoint) {
       padding: nsw.rem(48px) nsw.rem(16px);
+    }
+
+    .nsw-docs--compact & {
+      padding-bottom: nsw.rem(80px);
     }
   }
 
