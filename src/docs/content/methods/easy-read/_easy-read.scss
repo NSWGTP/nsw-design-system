@@ -123,7 +123,7 @@
     width: nsw.rem(48px);
     height: nsw.rem(48px);
     padding: nsw.rem(3px);
-    background-image: url('#{nsw.$nsw-easy-read-icon}');
+    background-image: nsw.svg-url(nsw.$nsw-easy-read-icon);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -260,7 +260,7 @@
   }
 
   &__pictogram {
-    background-image: url('#{nsw.$nsw-easy-read-icon}');
+    background-image: nsw.svg-url(nsw.$nsw-easy-read-icon);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
