@@ -20,9 +20,9 @@ How you use the NSW Design System depends on your team's capabilities.
 
 We recommend the following methods:
 
-1. [Download the latest release](https://github.com/digitalnsw/nsw-design-system/releases)
+1. [Download the latest release](https://github.com/NSWGTP/nsw-design-system/releases)
 
-2. Clone the repo: `git clone https://github.com/digitalnsw/nsw-design-system.git`
+2. Clone the repo: `git clone https://github.com/NSWGTP/nsw-design-system.git`
 
 3. **Using npm Package Manager:** This method provides a structured and customisable approach to integrating the design system into your project.
 
@@ -136,11 +136,11 @@ Please read through our [contributing guidelines](https://www.digital.nsw.gov.au
 Connect with project maintainers and community members, get notified about releases, ask questions and report technical issues.
 
 * Contact the team at [designsystem@customerservice.nsw.gov.au](mailto:designsystem@customerservice.nsw.gov.au).
-* Watch the [NSW Design System on GitHub](https://github.com/digitalnsw/nsw-design-system).
+* Watch the [NSW Design System on GitHub](https://github.com/NSWGTP/nsw-design-system).
 
 ## Report an issue
 
-View and raise issues and bugs through our [Issues tracker on GitHub](https://github.com/digitalnsw/nsw-design-system/issues).
+View and raise issues and bugs through our [Issues tracker on GitHub](https://github.com/NSWGTP/nsw-design-system/issues).
 
 ## Design System Figma UI Kit
 
@@ -158,6 +158,6 @@ Our version numbers consist of MAJOR.MINOR.PATCH, where:
 
 * **PATCH** version is used for minor backward-compatible updates, new component variations, and bug fixes.
 
-See [the Releases section of our GitHub project](https://github.com/digitalnsw/nsw-design-system/releases) for release notes for each release version. Release posts on our [release notes page](https://designsystem.nsw.gov.au/release-notes/index.html) contain summaries of the most noteworthy changes made in each release.
+See [the Releases section of our GitHub project](https://github.com/NSWGTP/nsw-design-system/releases) for release notes for each release version. Release posts on our [release notes page](https://designsystem.nsw.gov.au/release-notes/index.html) contain summaries of the most noteworthy changes made in each release.
 
 Feel free to reach out if you have any questions or need more help with integrating the NSW Design System into your projects!
