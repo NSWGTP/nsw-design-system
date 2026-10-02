@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-  <title>{{#if home}}NSW Digital Design System{{else}}{{title}} - NSW Digital Design System{{/if}}</title>
+  <title>{{#if meta-title}}{{meta-title}}{{else}}{{#if home}}NSW Digital Design System{{else}}{{title}} - NSW Digital Design System{{/if}}{{/if}}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -51,7 +51,7 @@
   <script src="/cookie-consent-config.js"></script>
 </head>
 
-<body{{#if page}}{{#if code-page}} class="nsw-docs-demo"{{/if}}{{else}} class="nsw-docs{{#if light}} nsw-docs--light{{/if}}"{{/if}}>
+<body{{#if page}}{{#if code-page}} class="nsw-docs-demo"{{/if}}{{else}} class="nsw-docs{{#if light}} nsw-docs--light{{/if}}{{#if compact}} nsw-docs--compact{{/if}}"{{/if}}>
 {{#if page}}
 {{{contents}}}
 {{else}}
