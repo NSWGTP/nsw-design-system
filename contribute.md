@@ -176,7 +176,7 @@ Provide rationale; the more the better. We aim to explain design and code decisi
 
 To get started, contact [designsystem@customerservice.nsw.gov.au](mailto:designsystem@customerservice.nsw.gov.au) with questions or component and pattern suggestions.
 
-For issues and bugs, search our [issues tracker on GitHub](https://github.com/digitalnsw/nsw-design-system/issues) to see if the same bug has already been raised. If not, raise a new issue. Please provide specific steps to reproduce the bug and describe your expected behaviour.
+For issues and bugs, search our [issues tracker on GitHub](https://github.com/NSWGTP/nsw-design-system/issues) to see if the same bug has already been raised. If not, raise a new issue. Please provide specific steps to reproduce the bug and describe your expected behaviour.
 
 You can suggest a pattern by emailing [designsystem@customerservice.nsw.gov.au](mailto:designsystem@customerservice.nsw.gov.au).
 
