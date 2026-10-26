@@ -168,12 +168,14 @@
       position: relative;
     }
 
-    &:hover {
-      outline-width: 0;
+    &:hover,
+    &:focus:not(:focus-visible) {
+      outline: 0;
     }
 
-    &:focus {
-      outline-width: 3px;
+    &:focus-visible {
+      @include nsw.nsw-focus($offset: false);
+      outline-offset: -(nsw.$nsw-focus-width);
     }
   }
 
