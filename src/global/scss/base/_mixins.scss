@@ -40,11 +40,11 @@
     @error 'NSW-DS nsw-focus mixin allows a boolean for $offset: You have used a type of "#{meta.type-of($offset)}" and a value of "#{$offset}"';
   }
 
-  outline: solid 3px $color;
+  outline: solid settings.$nsw-focus-width $color;
   outline-offset: 0;
 
   @if $offset == true {
-    outline-offset: 3px;
+    outline-offset: settings.$nsw-focus-width;
   }
 }
 
