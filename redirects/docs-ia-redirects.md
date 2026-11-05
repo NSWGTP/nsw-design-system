@@ -1,6 +1,6 @@
 # Documentation IA redirects
 
-The Cloudflare bulk redirect file contains **39 permanent redirects**. The source set is limited to URLs published on the production site before this PR. Every source points directly to its final post-PR URL; there are no redirects for intermediate URLs introduced and changed within this branch.
+The Cloudflare bulk redirect file contains **40 permanent redirects**. The source set is limited to URLs published on the production site before this PR. Every source points directly to its final post-PR URL; there are no redirects for intermediate URLs introduced and changed within this branch.
 
 ## Coverage
 
@@ -8,11 +8,13 @@ The Cloudflare bulk redirect file contains **39 permanent redirects**. The sourc
 | --- | ---: | --- | --- |
 | Get started content | 11 | Existing About, Design, Develop, and Templates URLs | Final `/get-started/...` paths |
 | Utility classes | 15 | `/docs/content/utilities/...` | `/utility-classes/...` |
-| Methods | 6 | `/docs/content/methods/...` | `/methods/...` |
+| Methods | 7 | `/docs/content/methods/...` | `/methods/...` |
 | Contribute | 3 | `/docs/content/contribute/...` | `/contribute/...` |
 | Release notes | 1 | `/docs/content/about/release-notes.html` | `/release-notes/index.html` |
 | Guides | 1 | `/docs/content/design/guides.html` | `/get-started/guides.html` |
 | Page layout | 2 | `/core/layout/` and `/core/layout/index.html` | `/core/page-layout/index.html` |
+
+The Methods redirects include the historical `/docs/content/methods/data-visualisation.html` URL, which now points directly to `/methods/charts-and-graphs.html`.
 
 ## Get started URL changes
 
@@ -48,9 +50,10 @@ The directory-style and explicit `index.html` forms are both included for Templa
 
 `scripts/validate-docs-ia.js` verifies that:
 
-- the CSV contains exactly the expected 39 production-to-final mappings, with no missing or extra sources
+- the CSV contains exactly the expected 40 production-to-final mappings, with no missing or extra sources
 - every row uses the seven-column Cloudflare bulk redirect format
 - every status is `301`
+- every redirect preserves the incoming query string
 - source URLs are unique
 - sources and targets differ
 - targets are production URLs

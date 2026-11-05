@@ -269,6 +269,10 @@ const redirects = redirectRows.map((row) => {
   assert(columns[0].startsWith('https://designsystem.nsw.gov.au/'), `Redirect source must be production URL: ${row}`)
   assert(columns[1].startsWith('https://designsystem.nsw.gov.au/'), `Redirect target must be production URL: ${row}`)
   assert(columns[2] === '301', `Redirect status must be 301: ${row}`)
+  assert(columns[3] === 'true', `Redirect must preserve query strings: ${row}`)
+  assert(columns[4] === 'false', `Redirect must not include subdomains: ${row}`)
+  assert(columns[5] === 'false', `Redirect must not use subpath matching: ${row}`)
+  assert(columns[6] === 'true', `Redirect must preserve path suffixes: ${row}`)
 
   return { source: columns[0], target: columns[1] }
 })
@@ -313,6 +317,7 @@ const changedProductionRoutes = [
   ['/docs/content/design/theming.html', '/get-started/theming.html'],
   ['/docs/content/develop/theming.html', '/get-started/theming-for-developers.html'],
   ['/docs/content/design/extending.html', '/get-started/extending.html'],
+  ['/docs/content/methods/data-visualisation.html', '/methods/charts-and-graphs.html'],
   ['/core/layout/', '/core/page-layout/index.html'],
   ['/core/layout/index.html', '/core/page-layout/index.html'],
 ]
