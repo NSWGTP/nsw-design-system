@@ -272,7 +272,7 @@ const redirects = redirectRows.map((row) => {
   assert(columns[3] === 'true', `Redirect must preserve query strings: ${row}`)
   assert(columns[4] === 'false', `Redirect must not include subdomains: ${row}`)
   assert(columns[5] === 'false', `Redirect must not use subpath matching: ${row}`)
-  assert(columns[6] === 'true', `Redirect must preserve path suffixes: ${row}`)
+  assert(columns[6] === 'false', `Redirect must not preserve path suffixes without subpath matching: ${row}`)
 
   return { source: columns[0], target: columns[1] }
 })

@@ -54,6 +54,7 @@ The directory-style and explicit `index.html` forms are both included for Templa
 - every row uses the seven-column Cloudflare bulk redirect format
 - every status is `301`
 - every redirect preserves the incoming query string
+- subpath matching and path-suffix preservation are disabled for exact URL matching
 - source URLs are unique
 - sources and targets differ
 - targets are production URLs

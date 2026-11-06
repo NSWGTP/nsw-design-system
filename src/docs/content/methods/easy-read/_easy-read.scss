@@ -236,7 +236,7 @@
 
   &.nsw-section--brand-dark,
   &.nsw-section--invert {
-    a {
+    a:not(.nsw-button) {
       @include nsw.link-light;
     }
   }
@@ -244,7 +244,7 @@
   &.nsw-section--brand-light,
   &.nsw-section--off-white,
   &.nsw-section--white {
-    a {
+    a:not(.nsw-button) {
       @include nsw.link-dark;
     }
   }
