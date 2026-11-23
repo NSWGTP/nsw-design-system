@@ -1,4 +1,4 @@
-/* eslint-disable max-len, import/no-extraneous-dependencies */
+/* eslint-disable max-len */
 import {
   computePosition,
   flip,

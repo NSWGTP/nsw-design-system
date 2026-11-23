@@ -58,12 +58,12 @@
   "license": "ISC",
   "dependencies": {
     "@floating-ui/dom": "^1.6.13",
+    "uuid": "^14.0.0",
     "vanilla-cookieconsent": "^3.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
-    "@floating-ui/dom": "^1.6.13",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "auto-changelog": "^2.4.0",
@@ -117,7 +117,6 @@
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.16.0",
     "typescript": "5.6.3",
-    "uuid": "^14.0.0",
     "yargs": "^15.3.1"
   },
   "overrides": {
