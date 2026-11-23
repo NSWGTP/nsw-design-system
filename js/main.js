@@ -64,7 +64,6 @@
         return unsafeStringify(rnds);
     }
 
-    // eslint-disable-next-line import/no-extraneous-dependencies
     const hasWindow$2 = typeof window !== 'undefined';
     const hasDocument$2 = typeof document !== 'undefined';
     const legacyCopyText = text => {
@@ -6523,7 +6522,7 @@
       }
     }
 
-    /* eslint-disable max-len, import/no-extraneous-dependencies */
+    /* eslint-disable max-len */
     class Toggletip {
       constructor(element) {
         this.toggletip = element;
