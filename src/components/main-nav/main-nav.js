@@ -198,7 +198,10 @@ class Navigation {
     // removes handleOutsideClick functionality from docs site
       if (this.nav.closest('.nsw-docs')) return
 
-      const { link } = this.whichSubNavLatest()
+      const latestSubNav = this.whichSubNavLatest()
+      if (!latestSubNav) return
+      const { link } = latestSubNav
+
       const isExpanded = link.getAttribute('aria-expanded') === 'true'
       if (isExpanded) {
         this.toggleSubNavDesktop(true)
